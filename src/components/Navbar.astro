@@ -1,0 +1,171 @@
+---
+import Menu from "../components/Menu.astro";
+export interface Props {
+  image?: string;
+  showcase?: boolean;
+}
+const {image="/Images/AAF_logo_edit.jpg", showcase} = Astro.props
+---
+{showcase ? <div class="preview"></div>
+  <div class="nav-color-change"> </div>
+: <style>
+    .navbar {
+      background-color: #0F6292 !important;
+    }
+  </style>}
+
+<nav class="navbar">
+  <a href="/" class="nav-logo">
+    
+    <img src={image} alt="AAF Logo">
+  </a>
+  <div class="nav-menu">
+    <Menu />
+  </div>
+  <button class="mobile-nav open">
+    <i class="material-icons">menu</i>
+  </button>
+</nav>
+<div class="side-nav">
+  <button class="mobile-nav close">
+    <span class="material-icons">close</span>
+  </button>
+  <div class="mobile-menu">
+    <Menu />
+  </div>
+</div>
+
+<style>
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 80px;
+    background-color: transparent;
+    /* background-color: #0081C9; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .navbar.active {
+    background-color: #0081C9;
+  }
+
+  .nav-logo img{
+    position: relative;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+  .nav-color-change {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+  }
+
+  .preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+    z-index: 1;
+  }
+
+  .mobile-nav.open,
+  .mobile-nav.close {
+    display: none;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobile-nav.open i,
+  .mobile-nav.close {
+    display: none;
+    font-size: 1.5rem;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  @media screen and (max-width: 636px) {
+    
+    .mobile-nav.open {
+      display: inline-block;
+      margin-left: 60px;
+    }
+    .preview {
+    height: 60vh;
+  }
+    .mobile-nav.open i,
+    .mobile-nav.close span {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+
+  .mobile-nav.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    display: inline-block;
+  }
+
+  .nav-logo img{
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .side-nav.active {
+    display: inline-block;
+    background-color: #0081C9;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .mobile-menu {
+    margin: auto;
+    transform: translateY(50%);
+  }
+  }
+
+</style>
+
+<script>
+  const navigation = document.querySelector('.navbar');
+  const colorChanger = document.querySelector('.nav-color-change')
+  const openMenu = document.querySelector('.mobile-nav.open');
+const closeMenu = document.querySelector('.mobile-nav.close');
+const mobileNav = document.querySelector('.side-nav');
+
+console.log();
+  openMenu.addEventListener('click', ()=> {
+  mobileNav.classList.add('active');
+});
+closeMenu.addEventListener('click', ()=> {
+  mobileNav.classList.remove('active');
+})
+
+navScroll(colorChanger)
+function navScroll(x) {
+  window.addEventListener('scroll', () => {
+    x.getBoundingClientRect().top <= 0
+      ? navigation.classList.add('active')
+      : navigation.classList.remove('active');
+  });}
+</script>

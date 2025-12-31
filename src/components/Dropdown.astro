@@ -1,0 +1,92 @@
+---
+export interface Props {
+  title?: string,
+  body?: string
+}
+const {title, body} = Astro.props;
+---
+
+<section class="section-dropdown">
+  <h2 class="dropdown-title2">
+    <span class="material-icons add-drop active">add</span>
+    <span class="material-icons close-drop active">close</span>
+    {title}
+  </h2>
+  <p class="dropdown-body2">
+    {body}
+  </p>
+</section>
+
+<style>
+ 
+  .section-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+  }
+  .section-dropdown .dropdown-title2 {
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #eee;
+    color: #333;
+    border-bottom: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   .add-drop,
+   .close-drop.active {
+    display: none;
+    border: 1px solid #444;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .add-drop.active,
+  .close-drop {
+    display: inline;
+    border: 1px solid #444;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .section-dropdown .dropdown-body2 {
+    display: none;
+    padding: 15px;
+    background-color: #eee;
+    color: #333;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  .section-dropdown .dropdown-body2.active {
+    display: inline-block;
+    padding: 15px;
+    background-color: #eee;
+    color: #333;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  @media (max-width: 636px) {
+    .section-dropdown {
+    width: 100%;
+    margin: 50px 0;
+  }
+  }
+</style>
+
+<script>
+  const addIcon2 = document.querySelectorAll('.add-drop');
+  const closeIcon2 = document.querySelectorAll('.material-icons.close-drop');
+  const dropdown2s = document.querySelectorAll('.dropdown-title2');
+  const dropdownBody2= document.querySelectorAll('.dropdown-body2');
+
+  dropdown2s.forEach((dropdown2, idx) => {
+    dropdown2.addEventListener('click', () => {
+    dropdownBody2[idx].classList.toggle('active')
+    closeIcon2[idx].classList.toggle('active')
+    addIcon2[idx].classList.toggle('active')
+  })
+  })
+  
+
+</script>

@@ -1,0 +1,96 @@
+---
+export interface Props {
+  showcase?: boolean
+  title?: string
+  content?: string
+  image?: string
+  showcaseLink?: string
+}
+const {showcase, title='"The Masterminds"', content='Your one stop for legal solutions, we are here to serve you.', image="https://images.unsplash.com/photo-1612726381005-d87b40d5b123?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1113&q=80", showcaseLink} = Astro.props;
+---
+
+{showcase ? <section class="section-showcase">
+  <img src={image} alt="Page Hero">
+  <div class="showcase-text">
+    <h1 class="showcase-title">
+      {title}
+    </h1>
+    <p class="showcase-content">
+      {content}
+    </p>
+    <a href={showcaseLink} class="btn">Learn more</a>
+  </div>
+</section> 
+<style>
+  .section-showcase {
+    width: 100%;
+  }
+  img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .showcase-text {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: #fff;
+    z-index: 5;
+  }
+  .showcase-title {
+    font-size: 4.4rem;
+    margin: 25px 0;
+    
+  }
+  .showcase-content {
+    font-size: 1.1rem;
+    margin-bottom: 45px;
+  }
+
+.showcase-text .btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 40px;
+  background-color: #6096B4;
+  border-radius: 25px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 636px) {
+  .section-showcase {
+    width: 100%;
+  }
+  img {
+    height: 60vh;
+  }
+  .showcase-title {
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+  }
+  .showcase-content {
+    display: none;
+  }
+  .showcase-text .btn {
+  padding: 12px 30px;
+  background-color: #6096B4;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+}
+</style>
+: 
+<section class="section-hero-title">
+  <h1>{title} </h1>
+  </section>
+  <style>
+    .section-hero-title h1 {
+    font-size: 60px;
+    text-align: center;
+    background-color: #6096B4;
+    color: #fff;
+    padding: 25px 0;
+    margin-top: 80px;
+  }
+    </style>
+}
+

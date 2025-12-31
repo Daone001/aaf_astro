@@ -1,0 +1,50 @@
+---
+export interface Props {
+  picture?: string;
+	title?: string;
+	body?: string;
+  href?: string;
+}
+
+const {title="Articles And Publications", body = "Article on the DNA evidence under Nigerian Law", href, picture} = Astro.props;
+---
+
+<div class="card">
+	<div class="card-text">
+    <div class="img-border">
+      <img src=`${picture}` alt=`${title}` class="card-image">
+    </div>
+    
+		<h2 class="card-title">
+			{title}
+		</h2>
+		<p class="card-content">
+			{body}
+		</p>
+    <a href={href}>View Profile</a>
+	</div>
+</div>
+<style>
+  .card-text a {
+    background-color: #4E6E81;
+    text-decoration: none;
+    color: #eee;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+  }
+  .card-text a:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 0.2s ease-in;
+  }
+
+  a {
+    
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+</style>

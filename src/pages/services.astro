@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Showcase from "../components/Showcase.astro";
+import Navbar from "../components/Navbar.astro";
+import ListItems from "../components/ListItems.astro";
+import ContactForm from "../components/ContactForm.astro";
+---
+<Layout>
+  <Navbar 
+    showcase={false}
+  />
+  <Showcase 
+    showcase={false}
+    title="Our Services"
+  />
+  <ListItems />
+  <ContactForm />
+</Layout>

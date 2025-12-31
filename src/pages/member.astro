@@ -1,0 +1,26 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+import CardBtnImg from '../components/CardBtnImg.astro';
+import Showcase from '../components/Showcase.astro'
+
+const Profiles = await Astro.glob('../members/*.md');
+---
+
+<Layout title="AAF law member profiles">
+  <Navbar 
+  showcase={false}
+  />
+ <Showcase title="AAF Team Profiles"/>
+    {Profiles.map(profile => (
+      <CardBtnImg 
+      title={profile.frontmatter.title}
+      picture={profile.frontmatter.picture}
+      body={profile.frontmatter.excerpt}
+      href={`/${profile.frontmatter.slug}`}
+      />
+      
+    ))}
+  
+
+</Layout>

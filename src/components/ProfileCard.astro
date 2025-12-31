@@ -1,0 +1,75 @@
+---
+export interface Props {
+  image?: string,
+  name?: string,
+  position?: string
+}
+
+const {image, name, position} = Astro.props
+---
+
+<section class="section-profile-preview">
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src={image} alt="profile Image">
+    </div>
+    <div class="profile-text">
+      <h4 class="profile-title">
+        {name}
+      </h4>
+      <h5 class="profile-sub-title">
+        {position}
+      </h5>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    /* width: 100%; */
+    margin: 25px 0 25px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .profile-card {
+    background-color: #bbb;
+    padding: 50px 25px;
+    border-radius: 12px;
+    width: 450px;
+    text-align: left;
+  }
+  .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-image img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+  }
+  .profile-sub-title {
+    font-size: 1.3rem;
+    padding: 0;
+  }
+  .profile-title {
+    font-size: 28px;
+  }
+  
+  @media screen and (max-width: 636px) {
+    section {
+    width: 100%;
+    margin: 0;
+  }
+    .profile-card {
+      width: 100%;
+    }
+    .profile-image img {
+      height: auto;
+      width: 100%;
+    }
+  }
+</style>

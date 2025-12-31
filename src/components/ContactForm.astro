@@ -1,0 +1,146 @@
+---
+export interface Props {
+  fullName?: string,
+  email?: string,
+  phone?: number,
+  message?: string
+}
+const {fullName, email, phone, message}= Astro.props
+---
+
+<section class="section-contact">
+  <form>
+    <h2>Contact Us</h2>
+    <div class="form-row">
+      <label for="name"><span class="material-icons">person</span> Full name</label>
+      <input type="text" name="fullname" id="fullname">
+    </div>
+    <div class="form-row">
+      <label for="name"><span class="material-icons">mail</span> Email</label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div class="form-row">
+      <label for="name"><span class="material-icons">phone</span> Phone</label>
+      <input type="text" name="phone" id="phone">
+    </div>
+    <div class="form-row">
+      <label for="name"><span class="material-icons">message</span> Message</label>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-row">
+      <button class="btn" id="send-btn">
+        <span class="material-icons">send</span> Send
+      </button>
+    </div>
+  </form>
+</section>
+
+<style>
+  .section-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-contact h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  form {
+    background-color: #0F6292;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 60px 0;
+    width: 45%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.20);
+    font-family: inherit;
+  }
+
+  input,
+  textarea {
+    font-family: inherit;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 15px 0;
+  }
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+  button:hover {
+    background-color: #555;
+    color: #fff;
+    transition: all 0.3s ease-in;
+  }
+  @media (max-width:600px) {
+    form {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  const fullname = document.getElementById("fullname") as HTMLElement;
+  const email = document.getElementById("email") as HTMLElement;
+  const phone = document.getElementById("phone") as HTMLElement;
+  const message = document.getElementById("message") as HTMLElement;
+  const sendBtn = document.getElementById("send-btn") as HTMLElement;
+
+  sendBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const senderName = fullname?.value;
+    const senderEmail = email?.value;
+    const senderPhone = phone?.value;
+    const senderMessage = message?.value;
+
+    console.log(senderName);
+
+    const url = 'https://9jimzndq0j.execute-api.us-east-1.amazonaws.com/default/newAAFContactForm';
+
+    const body = {
+      senderName: senderName,
+      senderEmail: senderEmail,
+      senderPhone: senderPhone,
+      senderMessage: senderMessage
+    }
+
+    const fBody = {
+    method: 'POST',
+    body: JSON.stringify(body),
+  };
+
+  const sendEmail = async (url, body) => {
+    const data = JSON.stringify(body);
+    console.log('This is data', data);
+    try {
+        const res = await fetch(url, body);
+        console.log('This is response to fetch Post request', res);
+
+        if (!res.ok) {
+          // if HTTP-status is 200-299
+          // get the response body (the method explained below)
+          console.log('This is your status:', res.status);
+        } else {
+          console.log('This is your status:', res.status);
+          console.log(fullname);
+            fullname.innerText = '';
+            email.innerText = '';
+            phone.innerText = '';
+            message.innerText = '';
+        }
+      
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  sendEmail(url, fBody);
+  })
+</script>

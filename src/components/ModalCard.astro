@@ -1,0 +1,130 @@
+---
+import ModalPreviewCard from './ModalPreviewCard.astro';
+export interface Props {
+  Image?: string;
+  title?: string;
+  summary?: string;
+  openIcon?: string;
+  body?: string;
+}
+const {Image, title, summary, openIcon, body} = Astro.props;
+---
+
+<section class="section-modal">
+  <div class="modal-veil"></div>
+  <div class="modal-card">
+    <div class="modal-image">
+      <img src={Image} alt="Modal Image">
+    </div>
+    <div class="modal-text">
+      <h4 class="modal-title">
+        {title}
+      </h4>
+      <p class="modal-body">
+        {summary}
+      </p>
+      <button class="open-modal"><span class="material-icons">{openIcon}</span></button>
+    </div>
+  </div>
+  <ModalPreviewCard 
+  Image={Image}
+	title={title}
+	body={body}
+	closeIcon="close"
+  />
+</section>
+
+  
+
+<style>
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+  .section-modal {
+    position: relative;
+  }
+  
+  .modal-card {
+    position: relative;
+    background-color: #bbb;
+    padding: 80px 25px;
+    border-radius: 12px;
+    width: 600px;
+  }
+  .modal-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .modal-image img{
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+  }
+  .modal-title {
+    font-size: 28px;
+  }
+  .open-modal {
+    position: absolute;
+    bottom: 2%;
+    right: 25px;
+    background-color: #F16767;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .open-modal:hover {
+    transform: scale(1.2);
+    border: 1px solid #ffffff;
+    transition: all 0.2s ease-in-out;
+  }
+  @media screen and (max-width: 636px) {
+    .modal-card {
+      width: 100%;
+    }
+    .modal-image img {
+      height: auto;
+      width: 80%;
+    }
+  }
+</style>
+<script>
+  const modalSpace = document.querySelector('.modal-section');
+  const openButtons = document.querySelectorAll('.open-modal');
+  const closeButtons = document.querySelectorAll('.close-modal');
+  const modalCards = document.querySelectorAll('.section-modal-preview');
+  const modalVeil = document.querySelectorAll('.modal-veil');
+  // modalSpace.addEventListener('click', () => {
+  //   modalVeil.classList.remove('active');
+  //   modalCards.forEach((modalCard, idx) => {
+  //     modalCard.classList.add('active');
+  //   });
+  // })
+  openButtons.forEach((openButton, idx) => {
+    openButton.addEventListener('click', () => {
+    
+      modalCards[idx].classList.add('active');
+    
+    modalVeil[idx].classList.add('active');
+    
+  })
+  })
+  closeButtons.forEach((closeButton, index) => {
+    closeButton.addEventListener('click', () =>{
+    
+      modalCards[index].classList.remove('active');
+
+    modalVeil[index].classList.remove('active');
+  })
+  })
+  
+</script>

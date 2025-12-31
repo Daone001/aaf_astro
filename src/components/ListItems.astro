@@ -1,0 +1,58 @@
+---
+import ListDropdrown from '../components/ListDropdrown.astro';
+
+const serviceLists = [
+  {
+    title:"Corporate Services",
+    itemList1:[
+    "We have adopted the best practices and accumulated the necessary experience in providing a variety of corporate services such as; corporate secretarial matters, statutory compliance and corporate governance.", 
+  "We act as Corporate Secretaries for organizations and as external legal counsel to Incorporated Trusts, Corporations and Non-Governmental Organizations (NGOs).",
+  "The firm assists organizations in other matters such as; tax remittance and avoidance, corporate searches, debt negotiations, and portfolio restructuring."
+    ]
+  },
+  {
+    title:"Litigation and Dispute Resolution",
+    itemList1:[
+    "Vast understanding of the intricacies of dealing with the Nigerian criminal law climate.", 
+  "Our partners have built good relationships at all levels of the Nigerian legal justice system and put these links to good use for our clients. The firm also seeks to contribute its quota to the restricting of the Nigerian Criminal Justice System which is currently fraught with a lot of problems from prison congestion to timely access to justice.",
+  "We have a skilled litigation practice with exceptional legal knowledge and mastery of procedure. Our ability to provide timely expert advice has kept us ahead in our profession for years, leading to consistent success.",
+  "A vast experience in navigating the judicial system and challenging frivolous applications.",
+  "Our civil litigation practice complements the corporate law practice as our lawyers help clarify current commercial law and seek to establish new precedents in Nigerian law through litigation.",
+  "We aim to ensure that disputes are resolved timely and effectively with little to no disruption to our clients’ business or whenever possible.",
+  "Disputes arising from business and commercial activities are promptly resolved via Pro-Mediation and Settlement without resorting to expensive litigation. Our ability to understake a cost benefit analysis of dispute enables the determination of the most viable approach to the resolution of same.",
+  "Our lawyers encourage clients to be open to resolving their disputes via litigation when and where necessary."
+    ]
+  },
+  {
+    title:"Immigration Law",
+    itemList1: [
+      "The firm provides routine compliance checks with the immigration services and facilitates the entry of expatriates into Nigeria.",
+      "We work closely with the immigration services to provide viable solutions to foreign companies and investors in Nigeria."
+    ]
+  },
+  {
+    title:"Property Law and Real Estate",
+    itemList1: [
+      "We offer a wide range of services ranging from title searches, investigation, requisition, to the drafting and perfection of title documents.",
+      "Core services also include development, investment, and management of assets along with planning litigation for tax and property portfolios.",
+      "Our partners assist in the process of procuring loans for special projects in conjunction with foreign and local banks."
+    ]
+  },
+  {
+    title: "Aviation Law",
+    itemList1: [
+      "The firm has experience in the Nigerian aviation industry, handling multiple transactions related to the provision of essential services for the maintenance of aircrafts. These services include but are not limited to the drafting relevant documents for the storage of petroleum products, haulage of petroleum products, use and operation of tank farms and jetties, refueling and defueling of aircrafts.",
+      "The firm assist in the resolution of problems that come with the management and procedures related to aircraft management and streamlining basic processes to ease and protect clients investments and property."
+    ]
+  }
+]
+
+---
+{
+  serviceLists.map(serviceList => (
+    <ListDropdrown 
+      title={serviceList.title}
+      listItem1={serviceList.itemList1}
+    />
+  ))
+}

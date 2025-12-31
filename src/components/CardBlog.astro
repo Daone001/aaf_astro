@@ -1,0 +1,33 @@
+---
+export interface Props {
+	title?: string;
+	body?: string;
+  blogDate?: string;
+  author?: string;
+}
+
+const {title="Articles And Publications", body = "Article on the DNA evidence under Nigerian Law", blogDate="3/11/2023", author="Oludayor Ayeni" } = Astro.props;
+---
+
+<div class="card">
+	<div class="card-text">
+		<h2 class="card-title">
+			{title}
+		</h2>
+		<p class="card-content">
+			{body}
+		</p>
+    <div class="card-details">
+      <p class="card-author">Author: <em>{author}</em> </p>
+      <small>{blogDate}</small>
+    </div>
+	</div>
+</div>
+<style>
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+</style>

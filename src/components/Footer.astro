@@ -1,0 +1,83 @@
+---
+import FooterText from '../components/FooterText.astro';
+import FooterInfo from '../components/FooterInfo.astro';
+export interface Props {
+  footerDate?: string;
+}
+const {footerDate} = Astro.props
+---
+
+<footer>
+  <div class="row">
+    <h2>Info</h2>
+    <FooterText />
+    <FooterText
+      body="(+234)7038669897"
+      icon="call"
+    />
+    <FooterText body="aaflegal@gmail.com" icon="mail" />
+  </div>
+
+  <div class="row">
+    <h2>Menu</h2>
+    <FooterInfo body="Home" href="/" icon="home" />
+    <FooterInfo body="About" href="/about" icon="update" />
+    <FooterInfo body="Team" href="/team" icon="diversity_3" />
+    <FooterInfo body="Services" href="/services" icon="gavel" />
+    <FooterInfo body="Contact" href="/contact" icon="contactless" />
+  </div>
+</footer>
+<div class="footer-cpright">
+  <span class="cp-text">  &copy; <span id="footer-date"></span> AAF Legal Practitioners </span>
+</div>
+
+<style>
+  footer {
+    background-color: #00425a;
+    color: #ffffff;
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  footer .row {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  h2 {
+    margin-left: 25px;
+  }
+  .footer-cpright {
+    background-color: #01394d;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+  }
+  @media screen and (max-width: 636px) {
+    footer {
+  display: flex;
+  flex-direction: column;
+  }
+  footer .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+</style>
+
+<script>
+  const footerDate = document.getElementById('footer-date');
+  const displayYear = new Date().getFullYear().toString();
+  footerDate.innerText = displayYear;
+</script>

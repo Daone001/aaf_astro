@@ -1,0 +1,46 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Showcase from "../components/Showcase.astro";
+import ProfileCard from "../components/ProfileCard.astro";
+import Dropdown from "../components/Dropdown.astro";
+---
+
+<Layout>
+  <Navbar 
+  showcase={false} 
+  />
+  <Showcase 
+    showcase={false}
+    title="The Team"
+  />
+  <div class="row-even">
+    <ProfileCard 
+    image="https://aaflegalpractice.com/images/Siji%20Animashaun_edit.jpg"
+    position="Partner"
+    name="Sijuade Animashaun"
+    />
+    <Dropdown 
+      title="Profile"
+      body='Mr. Sijuade Animashaun is a well-seasoned legal practitioner who graduated with honors from University, Law School, and Graduate School respectively. He recently had is research paper on "Regulating Virtual Currency Payment Systems" pulished in the Cambridge Law Review Journal. Furthermore, he developed an exceptional understanding of the law and practices on both the local and international level, providing legal advise and other legal services as required.'
+    />
+    <ProfileCard 
+    image="https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Oludayo_Ayeni_Profile_Pic.jpg"
+    position="Partner"
+    name="Oludayo Ayeni"
+    />
+    <Dropdown 
+      title="Profile"
+      body='Mr Oludayo Ayeni is a legal practitioner with a strong academic background, enthusiasm for development, and excellent work ethics. He has specific interests in these areas of law: litigation, corporate commercial law, aviation law, maritime and oil and gas law to mention a few. Over a period of five years since his qualification as a legal practitioner he has acquired a good deal of experience in the previously mentioned areas of law in Nigeria and he continues to improve his skills in relevant areas of the law.He has been opportune to be a part of and is currently on various legal teams both local and international, who handle a variety of high profile legal briefs and transactions that adds value to the society and shape the socioeconomic policies of Nigeria.'
+    />
+    <ProfileCard 
+    image="https://aaflegalpractice.com/images/Fappi_edit.jpg"
+    position="Partner"
+    name="Seun Fapohunda"
+    />
+    <Dropdown 
+      title="Profile"
+      body='Mr. Seun Fapohunda is an experienced legal practitioner with over 5 years of valuable expertise gained through a variety of legal practice placements. Displays specific interest in corporate commercial practice, litigation, energy law and cutting edge experience in real estate and property law.'
+    />
+  </div>
+</Layout>

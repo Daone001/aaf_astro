@@ -1,0 +1,64 @@
+---
+import Card from '../components/Card.astro';
+---
+<div class="row">
+  <h2>Areas of Expertises</h2>
+  
+  <div class="expertise">
+    <Card>
+      <h2>Our Clients</h2>
+  <ul>
+    <li><span class="material-icons">
+business_center
+</span> Corporate services.</li>
+    <li><span class="material-icons">
+gavel
+</span> Litigation.</li>
+    <li><span class="material-icons">
+handshake
+</span> Arbitration.</li>
+    <li><span class="material-icons">diversity_2</span> Dispute Resolution.</li>
+    <li><span class="material-icons">
+airplane_ticket
+</span> Immigration.</li>
+    <li><span class="material-icons">
+real_estate_agent
+</span> Property law and real estate.</li>
+    <li><span class="material-icons">home
+</span>  Estate management.</li>
+    <li><span class="material-icons">
+flight
+</span> Aviation.</li>
+  </ul>
+  </div>
+    
+  </div>
+  
+</Card>
+
+</div>
+
+<style>
+  .row h2{
+    font-size: 2.3rem;
+  }
+
+  .expertise {
+    width: 80%;
+  }
+
+  .expertise h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .expertise li {
+    font-size: 1.2rem;
+  }
+  
+  @media screen and (max-width: 636px) {
+    .row h2{
+    font-size: 2rem;
+  }
+  }
+</style>

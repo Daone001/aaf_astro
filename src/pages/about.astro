@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Showcase from "../components/Showcase.astro";
+import Navbar from "../components/Navbar.astro";
+import ModalCard from "../components/ModalCard.astro";
+const modals = [
+  {
+    Image: "https://aaflegalpractice.com/images/Backround3_edit.jpg",
+    title: "Our Story",
+    openIcon: "add",
+    summary: "AAF Legal Practitioners was established in 2017 with the purpose of providing excellent, competent, and effective legal solutions to complex legal and commercial interactions among entities...",
+    body: "AAF Legal Practitioners was established in 2017 with the purpose of providing excellent, competent, and effective legal solutions to complex legal and commercial interactions among entities. Our partners are proactive and pragmatic thinkers who understand that every legal issue is special in its own way and requires a peculiar approach.This is a firm of professional legal minds that ensures the satisfaction of clients through the provision of top-notch and precise legal solutions that fosters corporate goodwill amongst clients and restores normalcy where issues arise. We aim to provide our clients with reliable and efficient services, with serious consideration given to client care, and progress updates on matters."
+  },
+  {
+    Image: "https://aaflegalpractice.com/images/Experience_edit.jpg",
+    title: "Experience",
+    openIcon: "add",
+    summary: "The experience of our partners are gathered under the mentoring of seasoned legal practitioners of at least 25 to 30 years post-call with experience in various areas of the legal practice...",
+    body: "The experience of our partners are gathered under the mentoring of seasoned legal practitioners of at least 25 to 30 years post-call with experience in various areas of the legal practice including criminal and civil practice, immigration, aviation, patents and trademark agent litigation, legal drafting and opinion, commercial, property management and perfection of title, family, industrial relations and other areas of Nigerian and international laws."
+  },
+  {
+    Image: "https://aaflegalpractice.com/images/Goals_edit.jpg",
+    title: "Goals",
+    openIcon: "add",
+    summary: "The firm aims to redefine the standards of legal practice in Nigeria, by adopting international best practices and implementing them in our style and approach to everyday issues faced by our clients...",
+    body: "The firm aims to redefine the standards of legal practice in Nigeria, by adopting international best practices and implementing them in our style and approach to everyday issues faced by our clients. Ultimately, the firm will be an instrument of social restructuring in Nigeria and in the international community."
+  }
+]
+---
+<Layout title="AAF About page">
+  <Navbar 
+  showcase={false}
+  />
+  <Showcase 
+  showcase={false}
+  title="About"
+  />
+  {modals.map(modal => (
+    <ModalCard 
+    Image={modal.Image}
+    title={modal.title}
+    openIcon={modal.openIcon}
+    summary={modal.summary}
+    body={modal.body}
+    />
+
+  ))}
+
+  <!-- <slot /> -->
+</Layout>

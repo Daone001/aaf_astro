@@ -1,0 +1,32 @@
+---
+import SmallCard from '../components/SmallCard.astro';
+
+const overview = [
+   {
+    title: "Top Services",
+    icon: "library_books",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati id aliquid quidem doloremque, sapiente ullam voluptate amet vitae maiores, consequatur dicta nostrum voluptatem hic ipsa qui aperiam veritatis ducimus minus!"
+  },
+  {
+    title:"Excellent Delivery",
+icon: "record_voice_over",
+body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati id aliquid quidem doloremque, sapiente ullam voluptate amet vitae maiores, consequatur dicta nostrum voluptatem hic ipsa qui aperiam veritatis ducimus minus!"
+  },
+  {
+    title: "Team Work",
+icon: "groups",
+body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati id aliquid quidem doloremque, sapiente ullam voluptate amet vitae maiores, consequatur dicta nostrum voluptatem hic ipsa qui aperiam veritatis ducimus minus!"
+  }
+]
+---
+
+<div class="row-even">
+  {overview.map(overviewcards => (
+    <SmallCard 
+    title={overviewcards.title}
+    icon={overviewcards.icon}
+    body={overviewcards.body}
+    />
+  ))}
+
+</div>

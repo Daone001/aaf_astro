@@ -1,0 +1,31 @@
+---
+export interface Props {
+  body?: string;
+  icon?: string;
+  href?: string;
+}
+
+const { body, icon = 'location_on', href } = Astro.props;
+---
+
+<div class="info">
+  <span class="material-icons"> {icon}</span>
+  <span><a href={href}>{body}</a></span>
+</div>
+
+<style>
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+  }
+
+  span a {
+    color: #fff;
+    margin-left: 25px;
+    font-size: 1.2rem;
+  }
+</style>

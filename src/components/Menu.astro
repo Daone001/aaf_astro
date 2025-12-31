@@ -1,0 +1,53 @@
+<ul class="menu">
+  <a href="/"><li>Home</li> </a>
+  <a href="/about"><li>About</li></a>
+  <a href="/member"><li>Team</li></a>
+  <a href="/blog"><li>Articles</li></a>
+  <a href="/services"><li>Services</li></a>
+  <a href="/contact"><li>Contact</li></a>
+</ul>
+
+<style>
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  a {
+    padding: 15px 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+
+  a li {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 636px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a {
+      text-align: center;
+      width: 80%;
+      border-radius: 4px;
+    }
+
+    a:hover {
+      border: 2px solid rgba(255, 255, 255, 0.45);
+    }
+  }
+</style>

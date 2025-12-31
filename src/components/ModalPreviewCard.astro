@@ -1,0 +1,86 @@
+---
+export interface Props {
+  Image?: string;
+  title?: string;
+  body?: string;
+  closeIcon?: string;
+}
+const {Image, title, body, closeIcon} = Astro.props;
+---
+
+<section class="section-modal-preview">
+  <div class="modal-card">
+    <div class="modal-image">
+      <img src={Image} alt="Modal Image">
+    </div>
+    <div class="modal-text">
+      <h4 class="modal-title">
+        {title}
+      </h4>
+      <p class="modal-body">
+        {body}
+      </p>
+      <button class="close-modal"><span class="material-icons">{closeIcon}</span></button>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    width: 100%;
+    
+  }
+  .modal-card {
+    position: relative;
+    background-color: #bbb;
+    padding: 50px 25px;
+    border-radius: 12px;
+    width: 80%;
+  }
+  .modal-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-image img{
+    height: 600px;
+    width: 600px;
+    object-fit: contain;
+  }
+  .modal-text {
+    padding: 0 35px;
+  }
+  .modal-title {
+    font-size: 28px;
+  }
+  .close-modal {
+    position: absolute;
+    top: 2%;
+    right: 25px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .close-modal:hover {
+    transform: scale(1.2);
+    border: 1px solid #ffffff;
+    transition: all 0.2s ease-in-out;
+  }
+  @media screen and (max-width: 636px) {
+    .modal-card {
+      width: 100%;
+    }
+    .modal-image img {
+      height: auto;
+      width: 80%;
+    }
+    .close-modal:hover {
+    transform: scale(0.9);
+  }
+  }
+</style>

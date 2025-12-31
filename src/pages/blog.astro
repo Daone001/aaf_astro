@@ -1,0 +1,25 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+import CardBtn from '../components/CardBtn.astro';
+import Showcase from '../components/Showcase.astro'
+
+const posts = await Astro.glob('../articles/*.md');
+---
+
+<Layout title="AAF law articles and blogs">
+  <Navbar 
+  showcase={false}
+  />
+ <Showcase title="AAF Articles"/>
+    {posts.map(post => (
+      <CardBtn 
+      title={post.frontmatter.title}
+      body={post.frontmatter.excerpt}
+      href={`/${post.frontmatter.slug}`}
+      />
+      
+    ))}
+  
+
+</Layout>

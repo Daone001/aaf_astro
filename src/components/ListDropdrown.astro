@@ -1,0 +1,122 @@
+---
+import ListItems from '../components/ListItems.astro';
+export interface Props {
+  title?: string,
+  listItem1?: Array<string>,
+  
+}
+const {title, listItem1} = Astro.props;
+---
+
+<section class="section-dropdown">
+  <h2 class="dropdown-title">
+    <span class="material-icons add active">add</span>
+    <span class="material-icons close active">close</span>
+    {title}
+  </h2>
+  <div class="dropdown-body">
+    <ul>
+      {listItem1.map(listItems => (
+        <li> {listItems}</li>
+    ))}
+     
+    </ul>
+      
+  </div>
+  
+</section>
+
+<style>
+ 
+  .section-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  .section-dropdown .dropdown-title {
+    padding: 15px 10px;
+    margin: 45px 0 15px 0;
+    font-size: 1.7rem;
+    width: 100%;
+    background-color: #eee;
+    color: #333;
+    border-bottom: 1px solid #444;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+  }
+   .add,
+   .close.active {
+    display: none;
+    border: 1px solid #444;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .add.active,
+  .close {
+    display: inline;
+    border: 1px solid #444;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .section-dropdown .dropdown-body {
+    display: none;
+    padding: 15px;
+    background-color: #eee;
+    color: #333;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+  .section-dropdown .dropdown-body ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 2.7rem;
+    font-size: 1.2rem;
+  }
+
+  .section-dropdown .dropdown-body li {
+    margin: 15px;
+  }
+  .section-dropdown .dropdown-body.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    background-color: #eee;
+    color: #333;
+    width: 100%;
+    transition: all 0.4s ease;
+  }
+  @media screen and (max-width: 636px) {
+    .section-dropdown .dropdown-body ul {
+    font-size: 1rem;
+  }
+  .section-dropdown .dropdown-title {
+    font-size: 1.4rem;
+  }
+  }
+</style>
+
+<script>
+  const addIcon = document.querySelectorAll('.add');
+  const closeIcon = document.querySelectorAll('.material-icons.close');
+  const dropdowns = document.querySelectorAll('.dropdown-title');
+  const dropdownBody= document.querySelectorAll('.dropdown-body');
+
+  dropdowns.forEach((dropdown, idx) => {
+    dropdown.addEventListener('click', () => {
+    
+    dropdownBody[idx].classList.toggle('active')
+     
+      closeIcon[idx].classList.toggle('active')
+      addIcon[idx].classList.toggle('active')
+    })
+  
+  })
+  
+</script>

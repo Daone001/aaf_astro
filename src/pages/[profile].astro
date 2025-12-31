@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Showcase from '../components/Showcase.astro';
+import Card from '../components/Card.astro';
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob('../members/*.md');
+
+  return posts.map(post => ({
+    params: {
+      profile: post.frontmatter.slug
+    },
+    props: {
+      post
+    }
+  }));
+}
+
+const { Content, frontmatter} = Astro.props.post
+---
+
+<Layout title={frontmatter.title}>
+  <Navbar 
+  showcase={false}
+  />
+  <Showcase title={frontmatter.profile_title}/>
+  
+  <Card>
+    <a href="/member" class="btn">Go Back</a>
+    <a href={frontmatter.pdf} class="btn pdf">PDF</a>
+    <Content />
+  </Card>
+</Layout>
+
+<style>
+  a.pdf{
+    margin-left: 25px;
+  }
+</style>
