@@ -7,9 +7,9 @@ date: 2020-04-14
 author: Sijuade Animashaun (PhD)
 ---
 
-# Regulating Virtual Currency Payment Systems
+## Regulating Virtual Currency Payment Systems
 
-#### Sijuade Animashaun*
+#### Author: Sijuade Animashaun
 
 ### Abstract
 
@@ -29,11 +29,15 @@ For this reason, it’s incumbent to consider how best to manage the exposures i
 
 #### A. Aims and objectives
 
+---
+
 The aim of the paper is to critically analyze the possible impact of VCintermediaries direct integration with key stakeholders (TFIs) in the global payment systems. The paper also examines how interdependencies among financial systems—driven by financial consolidation-creates an exposure to systemic risks through the indirect interconnectedness of payment systems with same multinational TFIs. The regulators of payment systems are examined with aim of analyzing their efficiency in the management of cross-border risks by TFIs. Lastly, the objective of the paper is to argue for the regulation of VCintermediaries by international bodies in collaboration with domestic regulators in managing systemic risks-particularly fraud from cyber-attacks— that may threaten the potential benefits of the integration between VC-intermediaries and TFIs.
 
 To achieve this aim, the paper will examine the drivers of interdependencies in the global payment systems-particularly financial integration, and the possible benefits and risks of adopting the VC intermediaries as payment solutions providers in cross-border payment and settlements. The cross-pollination of risks between financial systems that may arise from VC-intermediaries consolidation with TFIs are examined and a practical approach to managing these potential disruptions is suggested using the instrumentality of international bodies.
 
 #### B. Value of research
+
+---
 
 Scholarly discourses on VCs are primarily on its functioning as an alternative payment or financial instrument. While this is laudable, it avoids the potentials of the innovative payment and settlement solution-Blockchain-used by the VC intermediaries in the provision of fast and cost effective cross-border payment services. Two major factors make the consideration of the potentials important presently: (a) there is a growing initiative among large TFIs on possible adoption of VC-Blockchain as an innovative payment and settlement solution to reap the benefits of economies of scale in cross-border payments processing; and (b) several central banks are presently considering the creation of VCs as an alternative payment instrument.
 
@@ -41,15 +45,21 @@ These factors make the financial consolidation between TFIs and Cryptocurrency e
 
 #### C. Scope of research
 
-Due to the constantly evolving nature of payment systems, there is no comprehensive literature dealing exhaustively with the dynamics of the recent facts considered in this paper. In addition, the relative novelty of VCs and their intermediaries implies that the academic writings on the subject are still growing with not trusted empirical evidence on the phenomenon. The coverage of the paper is to critically analyse the dynamics of VCs as payment systems, not in themselves, but through crypto-currency exchanges. The benefits and risks of financial integration within an interdependent global payment system are also considered through an examination of the drivers that have transformed the global payment infrastructure. Finally, it considers (rather collectively), the functioning of international bodies and argues for their adoption as the major regulators of VCintermediaries.
+---
+
+Due to the constantly evolving nature of payment systems, there is no comprehensive literature dealing exhaustively with the dynamics of the recent facts considered in this paper. In addition, the relative novelty of VCs and their intermediaries implies that the academic writings on the subject are still growing with not trusted empirical evidence on the phenomenon. The coverage of the paper is to critically analyze the dynamics of VCs as payment systems, not in themselves, but through crypto-currency exchanges. The benefits and risks of financial integration within an interdependent global payment system are also considered through an examination of the drivers that have transformed the global payment infrastructure. Finally, it considers (rather collectively), the functioning of international bodies and argues for their adoption as the major regulators of VCintermediaries.
 
 The paper however has limitations, it does not consider the functioning of VCs as payment instruments or financial instruments generally. It also does not cover how VCs or other payment systems are regulated but instead focuses on the principal regulators. Other limitations not mentioned here are stated in the paper.
 
 #### D. Methodology
 
-The paper adopts the critical analytical approach. It considers the laws,rules, principles and guidelines of payment systems generally. The purpose is to criticize the divergent approaches by domestic regulators to the potentials of VC-intermediaries as a disruptor of global payment systems due to its present limited use. The paper also examines the benefits that VC system’s inclusion might sequel for global payment market participants and while acknowledging the possible exposures. Due to the novelty of the research topic, sources researched include books, articles in law journals and other economic journals, publications by regional and international regulatory bodies and other publications in legal and related fields which provide the breadth and depth required for such analytical academic work. 
+---
+
+The paper adopts the critical analytical approach. It considers the laws,rules, principles and guidelines of payment systems generally. The purpose is to criticize the divergent approaches by domestic regulators to the potentials of VC-intermediaries as a disruptor of global payment systems due to its present limited use. The paper also examines the benefits that VC system’s inclusion might sequel for global payment market participants and while acknowledging the possible exposures. Due to the novelty of the research topic, sources researched include books, articles in law journals and other economic journals, publications by regional and international regulatory bodies and other publications in legal and related fields which provide the breadth and depth required for such analytical academic work.
 
 #### E. Research structure
+
+---
 
 The research is divided into five sections. This section, Section I, has given a general introduction of the research topic by elucidating the aims and objective, reasons and value of the academic work, methodology and finally, the scope and limitations of the paper.
 
@@ -69,7 +79,13 @@ The aim of this Section is to examine whether VCs-through Cryptocurrency exchang
 
 #### A. Payment systems
 
+---
+
 ##### 1. What are Payment Systems?
+
+---
+
+---
 
 Money plays a crucial role in the overall stability of any economy. It facilitates trade and ensures the smooth running of government and the financial system.7 Several attempts to define payment systems in legislative instruments and scholarly discourses focus on the banking system which performs core financial functions-including payments processing.
 
@@ -82,6 +98,10 @@ The nature of payment systems, discernible from these definitions may be summari
 
 ##### 2. Categories of Payment Systems
 
+---
+
+---
+
 Save low-value transactions which are majorly facilitated by other payment instruments-credit and debit cards, e-money (including virtual currencies), electronic funds transfer, majority of funds transfer are facilitated through the banking system.15 The in-depth mechanics of the payment systems are outside the scope of this Section.16 But, it is germane to mention that payment systems are broadly categorized into wholesale and retail payment systems, depending on the channel through which the funds are facilitated and the market participants.17 Wholesale payments (and the linked securities settlement) involve the facilitation of high-value funds or assets transfer (using interbank arrangements). The Central bank acts as the coordinator of wholesale operations through its special status as the regulator of the banking system. Clearing and settlement of funds-involving the reconciliation of payments and disbursal of funds to payee respectively, is facilitated within the bank, through clearing houses or the central bank in the case of interbank payments within the domestic jurisdictions.18
 
 On the other hand, retail payments involve the facilitation of low-value transfer of funds between individuals, households, businesses and government agencies. The core features of this category identified by Professor Hal Scott include: “universality (i.e. the ability to transfer funds at both point of sale and remotely); ease of use (including widespread acceptance by merchants); certainty of payment (subject to some degree of payment reversibility for mistaken payments); liquidity; record-keeping; safety and security; and financial inclusion”.19
@@ -90,15 +110,23 @@ However, a distinctive feature of the retail payment systems is that it includes
 
 ##### 3. Core Functions of Payment systems
 
+---
+
+---
+
 The key elements of payment systems as argued by Sheppard include authorization and initiation of payments, transmission and exchange of payment instruction and settlement between participant banks.21 These elements are made possible through other core obligations including the clearing and settlement of payments,22 storage of funds (custodial and transactional) and liquidity. Awrey and van Zwieten argued that the core functions of payment systems (through TFIs in banking systems) relates to the provision of storage facilities of funds and the promise of liquidity upon demand.23 In this Section, I shall focus on the two core functions—storage and liquidity—identified by the writers.
 
-**(i) Storage** 
+**(i) Storage**
+
+---
 
 A cursory look at the evolution of money confirms that it has existed in many forms including: barter, commodity (gold, metal, copper, iron), coin, paper, and recently, e-money.24 A driver of this evolution, apart from the double coincidence of want, revolves around ease of storage and transportation of money.25 This is a crucial function performed by TFIs—particularly banks—which collects deposits, store and provide funds upon demand for satisfaction of financial obligations.26 Specifically to bank-based payment systems, the storage functions may be divided into custodial and transactional storage. Custodial storage concerns the protection of client funds (or payment instruments) from theft, fraud and destruction prior to its use for payment transactions. This was traditionally performed through storage in giant vaults and later, with the advent of technology, electronically in bank accounts and ledger balances to which clients have proprietary rights as secured depositors.27
 
 On the other hand, transactional storage is performed by TFIs (banks and clearing houses) by facilitating the secure and efficient transfer of stored funds to third parties upon demand by owners for satisfying financial obligations.28 With the advent of technology in the modern payment systems, these functions are performed using innovative institutional clearing and settlements systems— real time gross settlement (RGTS), deferred net settlements (DNS) and other jurisdiction specific automated systems.29 Non-banks also provide similar services in collaboration with TFIs in offering “account-based” or “web-based” remittance and payment services to clients (particularly payment cards and mobile money).30 The funds are stored in payment cards secured by Chip and Pin issued by the non-banks or mobile money wallets providers.31
 
 **(ii) Liquidity**
+
+---
 
 In payment systems, liquidity concerns the availability of an asset in the required form for use in the purchase of goods and services without delay as to transferability or access.32 It could also broadly be expressed to mean the timely redelivery of funds stored by payment service providers back to their owners upon demand for the purchase of goods or repayment of debt.33 Banks are able to
 provide this function through the maintenance of a portion of their capital in liquid assets (Treasury bills) which may be easily disposed in the interbank market to provide funds in satisfaction of customers deposit withdrawals.34
@@ -107,7 +135,13 @@ Although the challenges to the bank’s liquidity is outside the scope of this S
 
 #### B. Virtual currencies
 
+---
+
 ##### 1. What are Virtual Currencies?
+
+---
+
+---
 
 Defining virtual currencies (VCs) depends on whether the attempt is to consider it as a currency, an investment, or a payment network.39 The paper’s focus is on payment systems and I shall therefore limit myself to the consideration of VCs as a payment system (and as a payment instrument only where necessary). As a payment system, VCs can be defined simply as a peer-to-peer (P2P) operational network governed by rules and standards for transfer of electronic cash among members of a virtual community without need for financial intermediaries.40 Not all VCs are payment systems, but the openly convertible VCs (Bitcoin) function as payment systems through VC-intermediaries. Defining VCs as electronic cash is perhaps misleading, the primary reason is because, unlike electronic money, VCs are not expressed in the traditional fiat currencies of particular sovereign jurisdiction41 or ‘expressed in traditional accounting units, such as in Euro, but in virtual accounting units, such as the “bitcoin”.42 The system operates through an open source software (called “blockchain”) accessible over the internet by all members of the virtual community and is used in the facilitation of VCs between members without the necessity of a trusted third-party intermediary.43
 
@@ -115,18 +149,26 @@ Since the creation of the first and most popular VC, Bitcoin in 2009 by Satoshi 
 
 ##### 2. How Does Bitcoin Blockchain Work?
 
+---
+
 To understand how Bitcoin works as a payment method, it’s prudent to briefly comment on its nature as a payment instrument, though outside the scope of this paper. Bitcoin may be defined as a private unregulated digital cash which is neither issued nor controlled by a sovereign institution (central bank) but created through special algorithms (cryptography) in a decentralised open distributed network node (called ‘mining’) by its developers or special users (called miners).47 Its distinguishing feature is pseudonymity of ownership because it exists essentially in virtual form capable of transfer through the internet using cryptography over a P2P network without regulation from any government authority or facilitation through a trusted TFI.48
 
 For facilitating the transfer of value in bitcoin between the members of the virtual community (apart from crypto-currency exchanges platform), it uses an innovative payment protocol-Blockchain (a type of distributed ledger technology “DLT”).49 To initiate a transfer, the anonymous holder of the unique identifier number (called ‘private key’) effects a transfer of the agreed unit of the VC to a transferee’s public key from the encrypted digital wallet (‘bitcoin addresses’) using an electronic signature. This generates a complex algorithmic problem with a timestamp on the transaction initiated—making it unalterable and irreversible.50 While the timestamp is to prevent the likelihood of double spending or counterfeiting by the payer, the electronic signature and algorithmic puzzle is used to verify the ownership of the transferor and the validity of the initiated transactions.51 The verification of the transaction is done by special users (called ‘miners’) using heavy computational protocols and cryptography in solving the complex mathematical problems generated by the transaction within 10–20 minutes through a ‘proof of work’.52 This verification ensures the integrity of the network by preventing internal/external fraud (by hackers) and encourage continuity by rewarding successful miners with newly created bitcoins. The verified transaction is thereafter entered as a block into the public network blockchain that is readily accessible by all members of the virtual community.53
 
 Blockchain functions outside the traditional banking system using instead a P2P open network that can be accessed by the members of the virtual community at any time globally via the internet Web. Further, VCs operate within a self regulatory framework using cryptography and blockchain to prevent double-spending, fraud, and cyber-attacks (the adequacy of this measure is considered elsewhere in this paper). Although still significantly lower than other payment systems, the acceptability of VCs as payment system is growing progressively. This is despite the shunning by most regulators because it is unregulated and the bad press since its inception.54 In the next Part, I shall examine whether VCs-through crypto-currency exchanges-perform core functions like TFIs in conventional payment systems.
 
-#### C. Do virtual currencies perform core payment functions? 
+#### C. Do virtual currencies perform core payment functions?
+
+---
 
 Earlier in this Section, I examined payment systems and the core functions performed by TFIs as PSPs. Two core functions—storage and liquidity—were considered using the banking system as focus. VCs, as evident from the facts in Part B, operates within a self-regulated open network outside the perimeter of regulated banking system without need for financial intermediaries in facilitating
 transfer of value. This financial independence was primarily born out of a distrust for TFIs which grew after 2008 Global Financial Crisis (GFC) that occasioned substantial losses to consumers.55 This point, in addition to a craving for financial inclusion, was canvassed as the foundation for VC initiative in the white paper by Satoshi Nakamoto.56 Attempts to avoid limitations and costs resulting from dependence on TFIs in payment processing heralded the era of ‘shadow payment systems’—which are payment service providers who perform the core functions of traditional banks (deposit taking, storage and liquidity) outside the perimeter of the regulated banking system.57 They are broadly classified into P2P payment systems (Paypal), mobile money platforms (M-Pesa) and Crypto-currency exchanges (Mt.Gox, Coinbase, CoinCheck).58 This Section will focus on how Cryptocurrency exchanges perform core payment functions like TFI.59 I have chosen crypto-currency exchanges instead for individual VCs for two reasons: (a) there are presently over 1700 VCs; and (b) not all VCs are payment systems (including Bitcoin) but a significant number of VCs function as payment systems through Crypto-currency exchanges.60
 
 **Crypto-Currency Exchanges**
+
+---
+
+---
 
 Although Nakamoto argued against the use of financial intermediaries, most VCs transactions are facilitated through crypto-currency exchanges (hereinafter called ‘the exchange’) who perform similar functions as TFIs within the VC system.61 Before its bankruptcy in 2014, Mt Gox.—founded in Tokyo in 2009—was reputed as the cornerstone of the Bitcoin system, facilitating more than 70% of the total bitcoin transactions globally.62 In recent times, Coinbase (with other exchanges) collectively facilitate VC-transactions for more 30 million clients globally (including top retail merchants like PayPal, Microsoft and Amazon).63 These exchanges operate outside the perimeter of the regulated banking system though they provide payment services like TFIs.64 Their core services include: facilitating the inter-convertibility between VCs and conventional fiat currencies (US Dollars, Euros, Pounds Sterling); providing online wallets on their servers for the storage of VCs to prevent theft and fraud and; providing a platform gateway for matching users in settling financial obligations.65
 
@@ -143,6 +185,8 @@ The aim of the Section is to critically analyze how VC intermediaries may pose p
 In Part B, I will attempt the question of whether exchanges may pose potential disruptions to the global payment systems through a possible financial integration with key stakeholders (TFIs) in the global payment network. In this part, I will employ a hypothetical situation in which VC exchanges collaborate with multinational TFIs to consider the effects such integration may have on the global payment system. My reasons for choosing financial consolidation over other factors are twofold: (a) Recent trend in global systems confirms large TFIs are considering the adoption of blockchain (though a modified permission closed systems format) as an alternative to the costly and time consuming processing of cross-border payments using traditional systems; and (b) The initiative for the creation of Central Bank Digital Currencies (CBDC)as an alternative payment instrument is gaining momentum among major central banks globally.74 These two initiatives suggest the likelihood of a collaboration between VC exchanges and TFIs soon if adopted.
 
 #### A. How global payment systems work
+
+---
 
 Due to the transnational scope of VCs and exchanges, I have opted to focus on the role of TFIs in the taxonomy of cross-border payment systems. However, the global payment system comprises a network of both domestic and cross-border systems which are interdependent in achieving the efficient flow of funds among global financial systems.75 The network comprises multinational TFIs (operating directly or as ‘correspondents or custodians’), central banks, other PSPs and central clearing depositories as its key participants.76 Interdependence of financial systems may be system-based or institution-based depending on whether the relationship is direct or indirect. Direct relationships arise from the use of the same payment messaging service providers, central clearing depositories, payment processors and risk management.77 On the other hand, indirect interdependencies emanates predominantly from the activities of Large TFIs (termed globally systemically important financial institutions, “GSIFIs”)78 or PSPs operating within multiple jurisdictions and indirectly linking the stability of each financial system to the smooth running of the others in which they operate.79
 
@@ -161,6 +205,8 @@ Thus, failure of either of the interconnected institutions could pose systemic r
 From facts and examples briefly considered above, its discernible that the global payment systems function through the interdependence among the financial institutions and systems which are key stakeholder in the payment systems network. These interdependencies have the advantages of increased efficiency, economies of scale and scope and better risk management among participating systems and institutions due to broader risk sharing and risk management.106 However, these advantages may be whittled down considerably if one considers the impact the failure of any of the interdependent institutions or systems may have on other participants or even the global financial system generally. The role played by TFIs is also evidently crucial to the network. In the next Part, I will examine how VC exchanges may impact the global payment systems (positively or otherwise) if (and when) it becomes a key stakeholder (by consolidation) in the global payment and settlement systems.
 
 #### B. How VC exchanges may impact global payment systems
+
+---
 
 Despite VC-blockchain’s lack of upper limit to the value of funds that may be processed through the network, the system is used for low-value transactions presently.107 This prevents it from being considered as systemically important to the global payment systems.108 Perhaps, this is because VC exchanges are still relative new and do not benefit from the goodwill enjoyed by TFIs.109 The European Banking Authority in a recent report concludes that VCs and its exchanges are predominantly used by private individuals with little institutional participation which drives the significance of TFIs as systemically important to wholesale payments systems.110 This may not come as a surprise considering that VCs systems were designed to facilitate payments without need for trusted third party or financial intermediaries. But, considering the focus of these Section, the question could be asked that what impact can VC exchanges have on the interdependent global payment systems if they integrate with TFIs? To answer this question, I will assume that the VC exchanges become integrated with TFIs in the banking system—a key stakeholder in the global payment system. Financial consolidation occurs when two financial institutions performing similar or complementary functions come together under any form of corporate restructuring.111 Put simply, what impact would a consolidation between a major bank (for example, JP Morgan Chase, Goldman Sachs) and a VC exchange have on the global payment system?
 
@@ -195,7 +241,9 @@ In the preceding Section III, I examined the benefits and potential disruptions-
 
 Part A will briefly consider the desirability of regulatory intervention on VCs exchanges. In Part B, focus will be on the regulators of TFIs in traditional payment systems. For this part, I shall limit my scope to central banks as the major regulator. Their limitations on extraterritoriality will also be analyzed. Lastly, Part C will consider the desirability of regulating VC exchanges through international regulatory bodies in collaboration with domestic regulators. I should state presently that the aim of this Section is not to provide an exhaustive research on the subject but merely to explore some conceptual legal alternatives that may be referenced for further research.
 
-#### A. Do VC exchanges require regulatory intervention? 
+#### A. Do VC exchanges require regulatory intervention?
+
+---
 
 As mentioned in Section II, VCs operate a self-regulated system in which all members of its virtual community (especially its developers) are responsible for maintaining the safety and integrity through their activities on the blockchain.136 VC exchange system are especially designed this way to ensure financial inclusion and independence by avoiding the regulatory costs and limitations that plague TFIs.137 Studies suggests that while VC exchange’s system is essentially technology driven, its self-regulatory approach is not entirely new. Similar practice was recorded in the 19th century under the ‘Suffolk banking system’ where payment settlement and clearing is done ‘in house’.138 But, the regulation of any payment system must critically focus on its efficiency, convenience, and safety.139 While blockchain web-based system appears efficient and convenient for its continuous availability, the continuous cyber-attacks that have plagued VC exchanges suggests that the safety of the system leaves much to be desired presently
 
@@ -208,6 +256,8 @@ Discernible from the facts considered above is that while VC exchange self-regul
 In the next Part, I will examine the role of central banks as the major regulator of traditional payment systems. Its limitations as to scope of authority and efficiency in cross-border payments will also be analyzed. The purpose of this examination is to tease out the challenges of the present divergent attempts by national regulators to regulate the global operations of VC exchanges.
 
 #### B. Who regulates traditional payment systems?
+
+---
 
 The question of who regulates payment systems, TFIs and PSPs within national economies is not hard to answer. This is because, as mentioned in Section II, payments facilitation is among the core financial functions performed by traditional deposit-taking banks.150 By implication, they are regulated alongside the traditional banking system. Other regulators of the securities system (including the Securities and Exchange Commission) also play significant role in the regulation of payment systems although through collaboration with the banking system.151 The major regulators of the banking system (and by extension, payment systems) within domestic jurisdictions are the central banks.152 For example, the Bank of England in the United Kingdom, the Federal Reserve in the United States and regional European Central Bank in the Euro zone.153 The central bank is specially crafted as a regulator of payment systems through its role as a catalyst and liquidity provider.154
 
@@ -225,11 +275,17 @@ In the next Part, I will consider the desirability of international bodies actin
 
 #### C. Should VC payment systems be regulated by international regulatory bodies?
 
+---
+
 Perhaps I should state presently that the term ‘international regulatory bodies’ is used in this Part to collectively refer to international organizations, institutions and agencies including: The Group of 20 (G20), Financial Stability Board (FSB), Basel Committee, Organization for Economic Cooperation and Development (OECD), Bank of International Settlement (BIS), IOSCO, Word bank and International Monetary Fund (IMF). While their evolution and scope of application is admittedly invaluable, it is beyond the scope of this present paper.167Suffice to mention that their memberships account for more than 90% of central banks and key financial officers of both emerging and advanced economies.168 My aim is to briefly examine why these bodies (including institutions and agencies which make up the international financial regulatory architecture) should be considered as the regulators of VC exchanges as a potential stakeholder in the interdependent global payment system.
 
 In arguing the desirability of international bodies over domestic regulators, my primary focus will be on the need for international coordination and cooperation. This is because, empirical evidence from the recent financial crisis suggests that divergent approaches by states towards managing potential disruptions to global stability resulted in regulatory arbitrage.169 This arbitrage in turn fostered the disruption’s navigation through several financial systems and the attendant systemic crisis failures.170 A similar trend of divergent approaches are observable in the attempts at regulation of VC exchanges several financial systems.171 To prevent the likelihood of another disruption navigating clandestinely through the interdependent payment network, there is need for cooperation and coordination among global regulators to manage potential disruptions.
 
 **International Coordination and Cooperation**
+
+---
+
+---
 
 As mentioned in Section II, global payment systems (and financial systems) are interdependent with the major drivers being technology, deregulation, and innovation.172 The interdependence also means that potential risks and failures of each financial systems or GISIFIs could have adverse effects on other interconnected systems if not jointly managed.173 These exposures to ‘cross-system’ risks make it incumbent on all financial systems and their regulators to cooperate (through ‘dual supervision’) in assessing potential risks to and jointly coordinating any risk management agenda.174 The argument for the need of international coordination and cooperation for VC exchanges stem primarily from three reasons: (a) they operate through a web-based system globally and their risks are “a global problem that require global response”;175 (b) the attempt by national regulators are uncoordinated and overregulation could lead to regulatory arbitrage and transfer of systemic risks within the global payment network;176 and (c) The authority of central banks are limited to their sovereign jurisdiction and inefficient for transnational supervision required for VC exchange activities.
 
@@ -673,4 +729,3 @@ Financial Regulation (n 11); Alexander et al, Global Governance of Financial Sys
 204 ibid ch 3.
 
 205 ibid
-

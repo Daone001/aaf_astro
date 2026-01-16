@@ -29,8 +29,9 @@ const {fullName, email, phone, message}= Astro.props
     </div>
     <div class="form-row">
       <button class="btn" id="send-btn">
-        <span class="material-icons">send</span> Send
+        <span class="material-icons">send</span>
       </button>
+      <div id="submit-message"></div>
     </div>
   </form>
 </section>
@@ -43,13 +44,14 @@ const {fullName, email, phone, message}= Astro.props
     align-items: center;
   }
   .section-contact h2 {
+    font-size: 2.3rem;
     text-align: center;
     margin-bottom: 25px;
   }
 
   form {
-    background-color: #0F6292;
-    color: #fff;
+    background-color: #ccc;
+    color: #333;
     padding: 40px;
     border-radius: 8px;
     margin: 60px 0;
@@ -75,7 +77,7 @@ const {fullName, email, phone, message}= Astro.props
     flex-direction: column;
   }
   button:hover {
-    background-color: #555;
+    background-color: #D25353;
     color: #fff;
     transition: all 0.3s ease-in;
   }
@@ -92,6 +94,7 @@ const {fullName, email, phone, message}= Astro.props
   const phone = document.getElementById("phone") as HTMLElement;
   const message = document.getElementById("message") as HTMLElement;
   const sendBtn = document.getElementById("send-btn") as HTMLElement;
+  const submitMessage = document.getElementById("submit-message") as HTMLElement;
 
   sendBtn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -130,6 +133,10 @@ const {fullName, email, phone, message}= Astro.props
         } else {
           console.log('This is your status:', res.status);
           console.log(fullname);
+          submitMessage.innerText="Email successfully sent!!!"
+          setTimeout(() => {
+            submitMessage.innerHTML='';
+          }, 5000);
             fullname.innerText = '';
             email.innerText = '';
             phone.innerText = '';

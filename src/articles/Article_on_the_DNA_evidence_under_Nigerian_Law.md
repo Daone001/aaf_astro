@@ -1,11 +1,13 @@
 ---
-title: Article on the DNA evidence under Nigerian Law
+title: Article On The DNA Evidence Under Nigerian Law
 slug: Article-on-the-DNA-evidence-under-Nigerian-Law
 pdf: https://s3.amazonaws.com/aaflegalpractice.com/Article+on+the++DNA+evidence+under+Nigerian+Law.pdf
 excerpt: Having examined the various statutes, case laws and the positions in other jurisdictions, are there any restrictions to the rights of an individual to carry out DNA test for personal use in Nigeria? The extant body of Nigerian law on the subject would appear to be silent on this point.
 date: 2022-05-13
-Arthur: Oludayo Ayeni
+Author: Oludayo Ayeni
 ---
+
+#### Author: Oludayo Ayeni
 
 ## Introduction
 

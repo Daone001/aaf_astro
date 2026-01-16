@@ -28,13 +28,48 @@ const { Content, frontmatter} = Astro.props.post
   
   <Card>
     <a href="/blog" class="btn">Go Back</a>
-    <a href={frontmatter.pdf} class="btn pdf">PDF</a>
+    <a href={frontmatter.pdf} class="pdf">PDF</a>
     <Content />
   </Card>
 </Layout>
 
 <style>
+  
   a.pdf{
+    font-family: inherit;
+    font-weight: bold;
     margin-left: 25px;
+    padding: 10px 20px;
+    background-color: #D25353;
+    color: #eee;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+
+  a.pdf:hover {
+    scale: 1.2;
+    background-color: #222831;
+    color: #eee;
+    transition: all 0.3 ease-in-out;
+  }
+
+  a.btn{
+    font-family: inherit;
+    font-weight: bold;
+    margin-left: 25px;
+    padding: 10px 20px;
+    background-color: #222831;
+    color: #eee;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+
+  a.btn:hover {
+    scale: 1.2;
+    background-color: #D25353;
+    color: #eee;
+    transition: all 0.3 ease-in-out;
   }
 </style>

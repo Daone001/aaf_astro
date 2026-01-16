@@ -5,7 +5,8 @@
   padding: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
+  background-color: #222831;
 }
 
 a {
@@ -73,13 +74,16 @@ a {
 
 .card-text img {
     
-    width: 350px;
-    height: 350px;
+    width: 60%;
+    height: auto;
     border: 10px solid #fff;
-    border-radius: 50%;
+    border-radius: 25%;
     margin: 20px;
-    object-fit: cover;
+    object-fit: contain;
+    overflow-x: hidden;
+    
   }
+
 .section-modal-preview {
   display: none;
   /* width: 100%;
@@ -111,12 +115,54 @@ a {
   z-index: 1;
 }
 
+/* Team Profiles */
+
+summary {
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: #eee;
+  color: #222831;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+summary:hover {
+  scale: 1.05;
+  background-color: #222831;
+  color: #eee;
+  transition: all 0.3s ease-in-out;
+}
+
+blockquote {
+  font-size: 1.2rem;
+}
+
+details ul li{
+  font-size: 1.2rem;
+  margin: 15px 0;
+  list-style-type: none;
+}
+
+.card-text {
+  overflow-wrap: break-word;
+}
+
+.card-text p {
+  font-size: 1.1rem;
+}
+
+
 @media screen and (max-width: 636px) {
   .card-text {
     width: 100%;
   }
   .card {
     width: 100%;
+  }
+
+  .card-text img {
+    
+    width: 100%; 
   }
   .row {
     width: 100%;

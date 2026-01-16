@@ -10,7 +10,7 @@ const {image="/Images/AAF_logo_edit.jpg", showcase} = Astro.props
   <div class="nav-color-change"> </div>
 : <style>
     .navbar {
-      background-color: #0F6292 !important;
+      background-color: #D25353 !important;
     }
   </style>}
 
@@ -43,7 +43,7 @@ const {image="/Images/AAF_logo_edit.jpg", showcase} = Astro.props
     width: 100%;
     padding: 10px 80px;
     background-color: transparent;
-    /* background-color: #0081C9; */
+    /* background-color: #D25353; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +51,7 @@ const {image="/Images/AAF_logo_edit.jpg", showcase} = Astro.props
   }
 
   .navbar.active {
-    background-color: #0081C9;
+    background-color: #D25353;
   }
 
   .nav-logo img{
@@ -105,7 +105,7 @@ const {image="/Images/AAF_logo_edit.jpg", showcase} = Astro.props
       margin-left: 60px;
     }
     .preview {
-    height: 60vh;
+    height: 100vh;
   }
     .mobile-nav.open i,
     .mobile-nav.close span {
@@ -121,7 +121,7 @@ const {image="/Images/AAF_logo_edit.jpg", showcase} = Astro.props
   }
 
   .nav-logo img{
-    height: 45px;
+    height: 30px;
     width: auto;
     object-fit: contain;
   }
@@ -130,13 +130,16 @@ const {image="/Images/AAF_logo_edit.jpg", showcase} = Astro.props
   }
   .side-nav.active {
     display: inline-block;
-    background-color: #0081C9;
+    background-color: #D25353;
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
+  }
+  .side-nav.active a:hover {
+    border: 1px #fff solid;
   }
   .mobile-menu {
     margin: auto;

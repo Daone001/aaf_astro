@@ -42,7 +42,7 @@ const {Image, title, summary, openIcon, body} = Astro.props;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 100px 0;
   }
   .section-modal {
     position: relative;
@@ -50,10 +50,11 @@ const {Image, title, summary, openIcon, body} = Astro.props;
   
   .modal-card {
     position: relative;
-    background-color: #bbb;
-    padding: 80px 25px;
+    background-color: #D25353;
+    color: #eee;
+    padding: 80px 45px;
     border-radius: 12px;
-    width: 600px;
+    width: 80%;
   }
   .modal-image {
     display: flex;
@@ -62,8 +63,8 @@ const {Image, title, summary, openIcon, body} = Astro.props;
     margin-bottom: 60px;
   }
   .modal-image img{
-    height: 500px;
-    width: 500px;
+    height: auto;
+    width: 80%;
     object-fit: contain;
   }
   .modal-title {
@@ -90,10 +91,16 @@ const {Image, title, summary, openIcon, body} = Astro.props;
   @media screen and (max-width: 636px) {
     .modal-card {
       width: 100%;
+      margin: 100px 0;
     }
     .modal-image img {
       height: auto;
       width: 80%;
+    }
+
+    .modal-veil.active {
+      height: 88%;
+      width: 100%;
     }
   }
 </style>

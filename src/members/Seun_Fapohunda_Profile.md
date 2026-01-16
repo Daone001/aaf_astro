@@ -14,46 +14,70 @@ profile_title: Partner - Seun Fapohunda
 
 > Mr. Seun Fapohunda is an experienced legal practitioner with over 10 years of valuable expertise gained through a variety of legal practice placements. Displays specific interest in corporate commercial practice, litigation, energy law and cutting edge experience in real estate and property law.
 
-## Professional Experience
-
 ---
 
-### Professor of Law
-
-<!-- Led a team that successfully reclaimed over ₦20 billion (approximately $13 million) for a leading Nigerian bank, overseeing strategy, case management, and court representation. -->
-
-### Commercial Law
-
-<!-- A published author in the Cambridge Law Review Journal - Regulating Virtual Currency Payment Systems. -->
-
-### Litigation Audit
-
-<!-- Led a team that conducted a comprehensive audit of over 700 cases for a Federal Government Regulatory agency, streamlining and ascertaining its claims in relation to a Joint Venture Agreement in the Nigerian Oil and Gas Industry.
--->
----
-
-## Education
-
----
-
-> Lagos State University (Undergraduate Degree).
-
-<!-- University of Lagos (Postgraduate Degree). -->
-
----
-
-## Professional Memberships
+<details> 
+<summary>Professional Memberships</summary>
 
 ---
 
 > Nigerian Bar Association.
 
-<!-- > Chartered Institute of Arbitrators (UK).
+> Chartered Institute of Arbitrators (UK).
 
-> Compliance Institute of Nigeria. -->
+> Compliance Institute of Nigeria.
 
 ---
 
-## Current Practice
+</details>
 
-> Mr. Fapohunda currently represents clients in high-level commercial litigation matters at the Federal High Courts, the State High Courts, and other superior courts of record focusing on contract interpretation, special civil actions, transactions advisory, and rights and obligations of companies.
+---
+
+<details> 
+<summary>Track Record</summary>
+
+---
+
+- Mr. Fapohunda currently represents clients in high-level commercial litigation matters at the Federal High Courts, the State High Courts, and other superior courts of record focusing on contract interpretation, special civil actions, transactions advisory, and rights and obligations of companies.
+
+---
+
+</details>
+
+---
+
+<details> 
+<summary>Expertise</summary>
+
+---
+
+> Administration of estates.
+
+> Corporate Investment and Restructuring.
+
+> Constitutional Law.
+
+> Dispute Resolution.
+
+> Debt Recovery.
+
+> Entertainment.
+
+> Real Estate.
+
+---
+
+</details>
+
+---
+
+<details> 
+<summary>Education</summary>
+
+---
+
+> University of Lagos (Undergraduate).
+
+---
+
+</details>
