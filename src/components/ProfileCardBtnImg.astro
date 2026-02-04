@@ -27,10 +27,11 @@ const {title="Articles And Publications", body = "Article on the DNA evidence un
 <style>
   .card-text {
     overflow: hidden;
+    width: 380px;
   }
 
   .card-text h2 {
-		font-size: 2rem;
+		font-size: 1.7rem;
     margin: 20px 0;
     padding: 8px;
     background-color: #222831;
@@ -81,17 +82,17 @@ const {title="Articles And Publications", body = "Article on the DNA evidence un
     overflow: hidden;
   }
 
-  /* .card-text img {
+  .card-text img {
     
     width: 100%;
-    height: auto;
-    border: 10px solid #fff;
-    border-radius: 25%;
+    height: 350px;
+    border: 5px solid #fff;
+    border-radius: 8%;
     margin: 20px;
-    object-fit: contain;
+    object-fit: cover;
     overflow-x: hidden;
     
-  } */
+  }
 
   .card-title {
     font-size: 1.8rem;
@@ -110,4 +111,17 @@ const {title="Articles And Publications", body = "Article on the DNA evidence un
   p {
     margin-bottom: 15px;
   }
+
+  @media screen and (max-width: 636px) {
+    .card-text {
+    overflow: hidden;
+    width: 100%;
+  }
+  .card-text img {
+    height: auto;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+    
+}
 </style>

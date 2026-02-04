@@ -2,7 +2,7 @@
 title: Sijuade Animashaun
 slug: Sijuade_Animashaun_Profile
 picture: https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Siji+Animashaun_edit.jpg
-excerpt: Mr. Sijuade Animashaun is a well-seasoned legal practitioner who graduated with honors from University, Law School, and Graduate School respectively. He developed an exceptional understanding of the law and practices on both the local and international level, providing legal advise and other legal services as required.
+excerpt: Mr. Sijuade Animashaun is a distinguished practitioner with honors from top-tier institutions. He possesses an exceptional understanding of local and international law, providing expert legal advice and comprehensive services to meet diverse client needs across complex legal and regulatory environments.
 date: 2025-11-24
 profile_title: Partner - Sijuade Animashaun
 ---
@@ -12,7 +12,7 @@ profile_title: Partner - Sijuade Animashaun
 
 ---
 
-> Mr. Sijuade Animashaun is a well-seasoned legal practitioner who graduated with honors from University, Law School, and Graduate School respectively. He recently had is research paper on "Regulating Virtual Currency Payment Systems" pulished in the Cambridge Law Review Journal. Furthermore, he developed an exceptional understanding of the law and practices on both the local and international level, providing legal advise and other legal services as required.
+> Mr. Sijuade Animashaun is a distinguished practitioner with honors from top-tier institutions. He possesses an exceptional understanding of local and international law, providing expert legal advice and comprehensive services to meet diverse client needs across complex legal and regulatory environments.
 
 ---
 

@@ -2,7 +2,7 @@
 title: Oludayo Ayeni
 slug: Oludayo_Ayeni_Profile
 picture: https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Oludayo_Ayeni_Profile_Pic.jpg
-excerpt: He is an Attorney with experience in corporate commercial and dispute resolution transactions. His vast experience and versatility as an Attorney span diverse areas of the law which includes dispute resolution and corporate commercial practices. He was a part of various legal teams both locally and internationally, that have managed a variety of sensitive legal briefs and he has represented the interests of various clients as well as agencies of the Nigerian government.
+excerpt: A versatile attorney with vast local and international experience in dispute resolution and corporate commercial practices. Managed sensitive legal briefs, representing diverse clients and Nigerian government agencies effectively across complex legal landscapes.
 date: 2025-11-24
 profile_title: Partner - Oludayo Ayeni
 ---
@@ -12,7 +12,7 @@ profile_title: Partner - Oludayo Ayeni
 
 ---
 
-> A Partner at Animashaun, Ayeni, Fapohunda (AAF) LP, Oludayo Ayeni is an alumnus of Lagos State University and the University of Lagos where he obtained his undergraduate and post-graduate degrees respectively. He has had the rare privilege of working with several senior advocates of Nigeria.
+> An alumnus of Lagos State University and the University of Lagos where he obtained his undergraduate and post-graduate degrees respectively. He has had the rare privilege of working with several senior advocates of Nigeria.
 
 > He is an Attorney with experience in corporate commercial and dispute resolution transactions. His vast experience and versatility as an Attorney span diverse areas of the law which includes dispute resolution and corporate commercial practices. He was a part of various legal teams both locally and internationally, that have managed a variety of sensitive legal briefs and he has represented the interests of various clients as well as agencies of the Nigerian government.
 

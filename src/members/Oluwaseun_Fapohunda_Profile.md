@@ -1,18 +1,18 @@
 ---
-title: Seun Fapohunda
-slug: Seun_Fapohunda_Profile
+title: Oluwaseun Fapohunda
+slug: Oluwaseun_Fapohunda_Profile
 picture: https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Fappi.jpg
-excerpt: Mr. Seun Fapohunda is an experienced legal practitioner with over 10 years of valuable expertise gained through a variety of legal practice placements. Displays specific interest in corporate commercial practice, litigation, energy law and cutting edge experience in real estate and property law.
+excerpt: Mr. Oluwaseun Fapohunda is an experienced practitioner with over a decade of legal expertise. He specializes in corporate commercial practice, litigation, and energy law, offering cutting-edge experience in real estate and property law to deliver high-value results for his clients.
 date: 2025-11-24
-profile_title: Partner - Seun Fapohunda
+profile_title: Partner - Oluwaseun Fapohunda
 ---
-![Sijuade_Animashaun_Profile](https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Fappi.jpg)
+![Oluwaseun_Fapohunda_Profile](https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Fappi.jpg)
 
 ## Summary
 
 ---
 
-> Mr. Seun Fapohunda is an experienced legal practitioner with over 10 years of valuable expertise gained through a variety of legal practice placements. Displays specific interest in corporate commercial practice, litigation, energy law and cutting edge experience in real estate and property law.
+> Mr. Oluwaseun Fapohunda is an experienced practitioner with over a decade of legal expertise. He specializes in corporate commercial practice, litigation, and energy law, offering cutting-edge experience in real estate and property law to deliver high-value results for his clients.
 
 ---
 
