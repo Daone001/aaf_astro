@@ -2,33 +2,25 @@
 import Card from '../components/Card.astro';
 ---
 <div class="row">
-  <h2>Areas of Expertises</h2>
+  <h2>Areas of Expertise</h2>
   
   <div class="expertise">
     <Card>
-      <h2>Our Clients</h2>
+      <h3>Our Clients</h3>
   <ul>
-    <li><span class="material-icons">
-business_center
-</span> Corporate services.</li>
-    <li><span class="material-icons">
-gavel
-</span> Litigation.</li>
-    <li><span class="material-icons">
-handshake
-</span> Arbitration.</li>
-    <li><span class="material-icons">diversity_2</span> Dispute Resolution.</li>
-    <li><span class="material-icons">
-airplane_ticket
-</span> Immigration.</li>
-    <li><span class="material-icons">
-real_estate_agent
-</span> Property law and real estate.</li>
-    <li><span class="material-icons">home
-</span>  Estate management.</li>
-    <li><span class="material-icons">
-flight
-</span> Aviation.</li>
+<li><span class="material-icons">home</span> Administration of Estates</li>
+<li><span class="material-icons">flight</span> Aviation.</li>
+<li><span class="material-icons">person</span> Civil and Criminal Litigation.</li>
+<li><span class="material-icons">business_center</span> Corporate and Commercial Practice.</li>
+<li><span class="material-icons">eco</span>  Energy and Natural Resources.</li>
+<li><span class="material-icons">airplane_ticket</span> Immigration.</li>
+<li><span class="material-icons">factory</span> Industrial Law.</li>
+<li><span class="material-icons">handshake</span> International and Local Arbitration.</li>
+<li><span class="material-icons">sailing</span> Maritime.</li>
+<li><span class="material-icons">diamond</span> Mining.</li>
+<li><span class="material-icons">water_drop</span> Oil and Gas.</li>
+<li><span class="material-icons">real_estate_agent</span> Real Estate.</li>
+<li><span class="material-icons">sports</span> Sports.</li>  
   </ul>
   </div>
     
@@ -44,17 +36,29 @@ flight
     color: #eee;
   }
 
-  .expertise {
-    width: 80%;
+  .row h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 
-  .expertise h2 {
-    text-align: center;
-    margin-bottom: 25px;
+  .expertise {
+    width: 100%;
   }
 
   .expertise li {
     font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .expertise li:hover {
+    background-color: rgba(168, 40, 40, 0.35);
+    font-size: 1.8rem;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgba(168, 40, 40, 0.15);
+    transition: all 0.3s ease-in-out;
   }
   
   @media screen and (max-width: 636px) {
@@ -62,8 +66,5 @@ flight
     font-size: 2rem;
   }
 
-  .expertise {
-    width: 100%;
-  }
   }
 </style>

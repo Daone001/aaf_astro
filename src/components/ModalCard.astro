@@ -68,14 +68,20 @@ const {Image, title, summary, openIcon, body} = Astro.props;
     object-fit: contain;
   }
   .modal-title {
-    font-size: 28px;
+    font-size: 2.2rem;
+    margin-bottom:1.5rem;
+    text-decoration: underline;
+  }
+  .modal-body {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
   }
   .open-modal {
     position: absolute;
     bottom: 2%;
     right: 25px;
-    background-color: #F16767;
-    color: #ffffff;
+    background-color: #eee;
+    color: #872341;
     border: none;
     width: 40px;
     height: 40px;
@@ -84,8 +90,8 @@ const {Image, title, summary, openIcon, body} = Astro.props;
   }
 
   .open-modal:hover {
-    transform: scale(1.2);
-    border: 1px solid #ffffff;
+    transform: scale(1.5);
+    border: 2px solid #ffffff;
     transition: all 0.2s ease-in-out;
   }
   @media screen and (max-width: 636px) {
