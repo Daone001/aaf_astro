@@ -1,12 +1,12 @@
 ---
 title: Oluwaseun Fapohunda
 slug: Oluwaseun_Fapohunda_Profile
-picture: https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Fappi.jpg
+picture: https://assets.aaflegalpractice.com/Fappi.jpg
 excerpt: Mr. Oluwaseun Fapohunda is an experienced practitioner with over a decade of legal expertise. He specializes in corporate commercial practice, litigation, and energy law, offering cutting-edge experience in real estate and property law to deliver high-value results for his clients.
 date: 2025-11-24
 profile_title: Partner - Oluwaseun Fapohunda
 ---
-![Oluwaseun_Fapohunda_Profile](https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Fappi.jpg)
+![Oluwaseun_Fapohunda_Profile](https://assets.aaflegalpractice.com/Fappi.jpg)
 
 ## Summary
 

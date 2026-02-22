@@ -1,12 +1,12 @@
 ---
 title: Sijuade Animashaun
 slug: Sijuade_Animashaun_Profile
-picture: https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Siji+Animashaun_edit.jpg
+picture: https://assets.aaflegalpractice.com/Siji_Animashaun_edit.jpg
 excerpt: Mr. Sijuade Animashaun is a distinguished practitioner with honors from top-tier institutions. He possesses an exceptional understanding of local and international law, providing expert legal advice and comprehensive services to meet diverse client needs across complex legal and regulatory environments.
 date: 2025-11-24
 profile_title: Partner - Sijuade Animashaun
 ---
-![Sijuade_Animashaun_Profile](https://s3.us-east-1.amazonaws.com/assets.aaflegalpractice.com/Siji+Animashaun_edit.jpg)
+![Sijuade_Animashaun_Profile](https://assets.aaflegalpractice.com/Siji_Animashaun_edit.jpg)
 
 ## Summary
 

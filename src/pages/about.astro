@@ -1,50 +1,50 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Showcase from "../components/Showcase.astro";
-import Navbar from "../components/Navbar.astro";
-import ModalCard from "../components/ModalCard.astro";
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Navbar from '../components/Navbar.astro';
+import ModalCard from '../components/ModalCard.astro';
 const modals = [
   {
-    Image: "https://aaflegalpractice.com/images/Backround3_edit.jpg",
-    title: "Our Story",
-    openIcon: "add",
-    summary: "AAF Legal Practitioners was established in 2017 with the purpose of providing excellent, competent, and effective legal solutions to complex legal and commercial interactions among entities...",
-    body: "AAF Legal Practitioners was established in 2017 with the purpose of providing excellent, competent, and effective legal solutions to complex legal and commercial interactions among entities. Our partners are proactive and pragmatic thinkers who understand that every legal issue is special in its own way and requires a peculiar approach.This is a firm of professional legal minds that ensures the satisfaction of clients through the provision of top-notch and precise legal solutions that fosters corporate goodwill amongst clients and restores normalcy where issues arise. We aim to provide our clients with reliable and efficient services, with serious consideration given to client care, and progress updates on matters."
+    Image: 'https://assets.aaflegalpractice.com/Backround3_edit.jpg',
+    title: 'Our Story',
+    openIcon: 'add',
+    summary:
+      'AAF Legal Practitioners was established in 2017 with the purpose of providing excellent, competent, and effective legal solutions to complex legal and commercial interactions among entities...',
+    body: 'AAF Legal Practitioners was established in 2017 with the purpose of providing excellent, competent, and effective legal solutions to complex legal and commercial interactions among entities. Our partners are proactive and pragmatic thinkers who understand that every legal issue is special in its own way and requires a peculiar approach.This is a firm of professional legal minds that ensures the satisfaction of clients through the provision of top-notch and precise legal solutions that fosters corporate goodwill amongst clients and restores normalcy where issues arise. We aim to provide our clients with reliable and efficient services, with serious consideration given to client care, and progress updates on matters.',
   },
   {
-    Image: "https://aaflegalpractice.com/images/Experience_edit.jpg",
-    title: "Experience",
-    openIcon: "add",
-    summary: "Our partners offer a combined three decades of legal expertise, having developed their practice under the mentorship of distinguished practitioners with over 25 years at the Bar. We provide comprehensive representation...",
-    body: "Our partners offer a combined three decades of legal expertise, having developed their practice under the mentorship of distinguished practitioners with over 25 years at the Bar. We provide comprehensive representation across a broad range of sectors, including Corporate and Commercial Law, Civil and Criminal Litigation, Energy and Natural Resources, Real Estate, and International Arbitration. Our multidisciplinary approach ensures tailored legal solutions in specialized fields such as Aviation, Maritime, Mining, and Industrial Relations."
+    Image: 'https://assets.aaflegalpractice.com/Experience_edit.jpg',
+    title: 'Experience',
+    openIcon: 'add',
+    summary:
+      'Our partners offer a combined three decades of legal expertise, having developed their practice under the mentorship of distinguished practitioners with over 25 years at the Bar. We provide comprehensive representation...',
+    body: 'Our partners offer a combined three decades of legal expertise, having developed their practice under the mentorship of distinguished practitioners with over 25 years at the Bar. We provide comprehensive representation across a broad range of sectors, including Corporate and Commercial Law, Civil and Criminal Litigation, Energy and Natural Resources, Real Estate, and International Arbitration. Our multidisciplinary approach ensures tailored legal solutions in specialized fields such as Aviation, Maritime, Mining, and Industrial Relations.',
   },
   {
-    Image: "https://aaflegalpractice.com/images/Goals_edit.jpg",
-    title: "Goals",
-    openIcon: "add",
-    summary: "The firm aims to redefine the standards of legal practice in Nigeria, by adopting international best practices and implementing them in our style and approach to everyday issues faced by our clients...",
-    body: "The firm aims to redefine the standards of legal practice in Nigeria, by adopting international best practices and implementing them in our style and approach to everyday issues faced by our clients. Ultimately, the firm will be an instrument of social restructuring in Nigeria and in the international community."
-  }
-]
+    Image: 'https://assets.aaflegalpractice.com/Goals_edit.jpg',
+    title: 'Goals',
+    openIcon: 'add',
+    summary:
+      'The firm aims to redefine the standards of legal practice in Nigeria, by adopting international best practices and implementing them in our style and approach to everyday issues faced by our clients...',
+    body: 'The firm aims to redefine the standards of legal practice in Nigeria, by adopting international best practices and implementing them in our style and approach to everyday issues faced by our clients. Ultimately, the firm will be an instrument of social restructuring in Nigeria and in the international community.',
+  },
+];
 ---
-<Layout title="AAF About page">
-  <Navbar 
-  showcase={false}
-  />
-  <Showcase 
-  showcase={false}
-  title="About"
-  />
-  {modals.map(modal => (
-    <ModalCard 
-    Image={modal.Image}
-    title={modal.title}
-    openIcon={modal.openIcon}
-    summary={modal.summary}
-    body={modal.body}
-    />
 
-  ))}
+<Layout title="AAF About page">
+  <Navbar showcase={false} />
+  <Showcase showcase={false} title="About" />
+  {
+    modals.map((modal) => (
+      <ModalCard
+        Image={modal.Image}
+        title={modal.title}
+        openIcon={modal.openIcon}
+        summary={modal.summary}
+        body={modal.body}
+      />
+    ))
+  }
 
   <!-- <slot /> -->
 </Layout>
