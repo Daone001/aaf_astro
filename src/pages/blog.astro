@@ -2,24 +2,23 @@
 import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
 import CardBtn from '../components/CardBtn.astro';
-import Showcase from '../components/Showcase.astro'
+import Showcase from '../components/Showcase.astro';
+import { getCollection } from 'astro:content';
 
-const posts = await Astro.glob('../articles/*.md');
+// const posts = await Astro.glob('../articles/*.md');
+const allArticles = await getCollection('articles');
 ---
 
 <Layout title="AAF law articles and blogs">
-  <Navbar 
-  showcase={false}
-  />
- <Showcase title="AAF Articles"/>
-    {posts.map(post => (
-      <CardBtn 
-      title={post.frontmatter.title}
-      body={post.frontmatter.excerpt}
-      href={`/${post.frontmatter.slug}`}
+  <Navbar showcase={false} />
+  <Showcase title="AAF Articles" />
+  {
+    allArticles.map((article) => (
+      <CardBtn
+        title={article.data.title}
+        body={article.data.excerpt}
+        href={`/${article.data.slug}`}
       />
-      
-    ))}
-  
-
+    ))
+  }
 </Layout>

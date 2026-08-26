@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Search from 'astro-pagefind/components/Search.astro';
+import Navbar from '../components/Navbar.astro';
+import Showcase from '../components/Showcase.astro';
+---
+
+<Layout title="Search Site">
+  <Navbar showcase={false} />
+  <Showcase title="Search our Website" />
+  <main>
+    <h1></h1>
+    <!-- The default UI container -->
+    <Search
+      id="search"
+      className="pagefind-ui"
+      uiOptions={{ showImages: false }}
+    />
+  </main>
+</Layout>
+
+<style is:global>
+  /* You can easily customize the default Pagefind UI colors */
+  :root {
+    --pagefind-ui-primary: #034ad8;
+    --pagefind-ui-text: #2d2d2d;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #eeeeee;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0;
+  }
+</style>

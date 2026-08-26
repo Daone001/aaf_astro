@@ -1,9 +1,9 @@
 ---
 title: Regulating Virtual Currency Payment Systems
 slug: Regulating-Virtual-Currency-Payment-Systems
-pdf: https://s3.amazonaws.com/aaflegalpractice.com/Regulating+Virtual+Currency+Payment+Systems.pdf
+pdf: https://assets.aaflegalpractice.com/Regulating_Virtual_Currency_Payment_Systems.pdf
 excerpt: This paper examines the functioning of virtual currencies as payment systems through crypto-currency exchanges and the likely impact their integration with traditional payment systems may have on the interdependent global payment systems. Being a potential global transformational phenomenon, should virtual payment systems be regulated like other traditional intermediaries to manage the risks from their operations? Which regulator has the requisite regulatory architecture to comprehend the fast-evolving dynamics of the innovative payment solution and better manage the risks? These are some of the questions attempted in this paper. The paper also examines the role played by central banks as the major regulator of payment intermediaries and their limitations on multinational financial institutions and payment activities. Finally, the paper suggests the adoption of international regulatory bodies as the major regulatory authority for the virtual exchanges in ensuring global cooperation and coordinated implementation of any developed action plan while fostering financial innovation. 
-date: 2020-04-14
+date: '2020-04-14'
 author: Sijuade Animashaun (PhD)
 ---
 

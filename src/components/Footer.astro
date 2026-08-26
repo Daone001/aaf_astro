@@ -4,17 +4,14 @@ import FooterInfo from '../components/FooterInfo.astro';
 export interface Props {
   footerDate?: string;
 }
-const {footerDate} = Astro.props
+const { footerDate } = Astro.props;
 ---
 
 <footer>
   <div class="row">
     <h2>Info</h2>
     <FooterText />
-    <FooterText
-      body="(+234)7038669897"
-      icon="call"
-    />
+    <FooterText body="(+234)7038669897" icon="call" />
     <FooterText body="aaflegal@gmail.com" icon="mail" />
   </div>
 
@@ -22,13 +19,17 @@ const {footerDate} = Astro.props
     <h2>Menu</h2>
     <FooterInfo body="Home" href="/" icon="home" />
     <FooterInfo body="About" href="/about" icon="update" />
+    <FooterInfo body="Search" href="/search" icon="search" />
+    <FooterInfo body="Articles" href="/blog" icon="book" />
     <FooterInfo body="Team" href="/member" icon="diversity_3" />
     <FooterInfo body="Services" href="/services" icon="gavel" />
     <FooterInfo body="Contact" href="/contact" icon="contactless" />
   </div>
 </footer>
 <div class="footer-cpright">
-  <span class="cp-text">  &copy; <span id="footer-date"></span> AAF Legal Practitioners </span>
+  <span class="cp-text">
+    &copy; <span id="footer-date"></span> AAF Legal Practitioners
+  </span>
 </div>
 
 <style>
@@ -53,7 +54,7 @@ const {footerDate} = Astro.props
     margin-left: 25px;
   }
   .footer-cpright {
-    background-color: #670D2F;
+    background-color: #670d2f;
     color: #fff;
     display: flex;
     justify-content: flex-start;
@@ -62,18 +63,18 @@ const {footerDate} = Astro.props
   }
   @media screen and (max-width: 636px) {
     footer {
-  display: flex;
-  flex-direction: column;
+      display: flex;
+      flex-direction: column;
+    }
+    footer .row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
   }
-  footer .row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
 
 <script>

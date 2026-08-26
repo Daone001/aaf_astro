@@ -3,7 +3,7 @@ title: Oludayo Ayeni
 slug: Oludayo_Ayeni_Profile
 picture: https://assets.aaflegalpractice.com/Oludayo_Ayeni_Profile_Pic.jpg
 excerpt: A versatile attorney with vast local and international experience in dispute resolution and corporate commercial practices. Managed sensitive legal briefs, representing diverse clients and Nigerian government agencies effectively across complex legal landscapes.
-date: 2025-11-24
+date: '2025-11-24'
 profile_title: Partner - Oludayo Ayeni
 ---
 ![Oludayo_Ayeni_Profile](https://assets.aaflegalpractice.com/Oludayo_Ayeni_Profile_Pic.jpg)

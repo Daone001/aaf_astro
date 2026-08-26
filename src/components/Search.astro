@@ -1,0 +1,72 @@
+---
+// export interface Props {
+//   title?: string;
+//   members?: Array<string>;
+// }
+import ProfileCardBtnImg from './ProfileCardBtnImg.astro';
+import { getCollection } from 'astro:content';
+const filteredPosts = await getCollection('members', ({ data }) => {
+  return data;
+});
+const query = Astro.url.searchParams.get('q');
+const searchResults = filteredPosts.filter((profile) =>
+  profile.data.title.includes(query),
+);
+
+const { query, searchResults } = Astro.props;
+---
+
+<input type="text" id="searchInput" placeholder="Search for team member..." />
+<ul id="teamList"></ul>
+
+<script define:vars={{ searchResults }}>
+  const searchInput = document.getElementById('searchInput');
+  const resultsList = document.getElementById('teamList');
+
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    const filtered = members.filter((member) =>
+      member.data.title.toLowerCase().includes(query),
+    );
+    // Render filtered results
+    resultsList.innerHTML = searchResults
+      .map(
+        (item) =>
+          `<li>${
+            item.data.title
+            // <ProfileCardBtnImg
+            //   title={item.data.title}
+            //   picture={item.data.picture}
+            //   body={item.data.excerpt}
+            //   href={`/${item.data.slug}`}
+            // />
+          }</li>`,
+      )
+      .join('');
+  });
+</script>
+
+<!-- <script>
+  // Select the input and list elements
+  const searchInput = document.getElementById('searchInput');
+  const itemsList = document.getElementById('itemsList');
+  const items = itemsList.getElementsByTagName('li'); // Get all the list items
+
+  // Add an event listener for the 'input' event to filter as the user types
+  searchInput.addEventListener('input', function (event) {
+    const searchTerm = event.target.value.toLowerCase(); // Get input and convert to lowercase
+
+    // Loop through all list items
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+      const textValue = item.textContent || item.innerText; // Get the text content
+
+      // Check if the item's text includes the search term
+      if (textValue.toLowerCase().includes(searchTerm)) {
+        item.style.display = ''; // Show the item
+      } else {
+        item.style.display = 'none'; // Hide the item
+      }
+    }
+  });
+</script> -->

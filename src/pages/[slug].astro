@@ -3,44 +3,47 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Showcase from '../components/Showcase.astro';
 import Card from '../components/Card.astro';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob('../articles/*.md');
+  // const posts = await Astro.glob('../articles/*.md');
 
-  return posts.map(post => ({
+  const allPosts = await getCollection('articles');
+
+  return allPosts.map((post) => ({
     params: {
-      slug: post.frontmatter.slug
+      slug: post.data.slug,
     },
     props: {
-      post
-    }
+      post,
+    },
   }));
 }
 
-const { Content, frontmatter} = Astro.props.post
+// const { Content, frontmatter} = Astro.props.post
+
+const { post } = Astro.props;
+const { Content } = await render(post);
 ---
 
-<Layout title={frontmatter.title}>
-  <Navbar 
-  showcase={false}
-  />
-  <Showcase title={frontmatter.title}/>
-  
+<Layout title={post.data.title}>
+  <Navbar showcase={false} />
+  <Showcase title={post.data.title} />
+
   <Card>
     <a href="/blog" class="btn">Go Back</a>
-    <a href={frontmatter.pdf} class="pdf">PDF</a>
+    <a href={post.data.pdf} class="pdf">PDF</a>
     <Content />
   </Card>
 </Layout>
 
 <style>
-  
-  a.pdf{
+  a.pdf {
     font-family: inherit;
     font-weight: bold;
     margin-left: 25px;
     padding: 10px 20px;
-    background-color: #D25353;
+    background-color: #d25353;
     color: #eee;
     border-radius: 4px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
@@ -55,7 +58,7 @@ const { Content, frontmatter} = Astro.props.post
     transition: all 0.3 ease-in-out;
   }
 
-  a.btn{
+  a.btn {
     font-family: inherit;
     font-weight: bold;
     margin-left: 25px;
@@ -68,7 +71,7 @@ const { Content, frontmatter} = Astro.props.post
 
   a.btn:hover {
     scale: 1.2;
-    background-color: #D25353;
+    background-color: #d25353;
     color: #eee;
     transition: all 0.3 ease-in-out;
   }

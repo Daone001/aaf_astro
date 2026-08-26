@@ -3,29 +3,35 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Showcase from '../components/Showcase.astro';
 import Card from '../components/Card.astro';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob('../members/*.md');
+  // const posts = await Astro.glob('../members/*.md');
 
-  return posts.map(post => ({
+  // const posts = Object.values(import.meta.glob('../members/*.md', {eager:true}));
+
+  const allMembers = await getCollection('members');
+
+  return allMembers.map((member) => ({
     params: {
-      profile: post.frontmatter.slug
+      slug: member.data.slug,
     },
     props: {
-      post
-    }
+      member,
+    },
   }));
 }
 
-const { Content, frontmatter} = Astro.props.post
+// const { Content, frontmatter} = Astro.props.member
+
+const { member } = Astro.props;
+const { Content } = await render(member);
 ---
 
-<Layout title={frontmatter.title}>
-  <Navbar 
-  showcase={false}
-  />
-  <Showcase title={frontmatter.profile_title}/>
-  
+<Layout title={member.data.title}>
+  <Navbar showcase={false} />
+  <Showcase title={member.data.profile_title} />
+
   <Card>
     <a href="/member" class="btn">Go Back</a>
     <!-- <a href={frontmatter.pdf} class="btn pdf">PDF</a> -->
@@ -34,17 +40,16 @@ const { Content, frontmatter} = Astro.props.post
 </Layout>
 
 <style>
-
   .card-content summary {
     font-size: 25px;
   }
-  a.btn{
-    background-color: #D25353;
+  a.btn {
+    background-color: #d25353;
     color: #eee;
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out;
   }
 
   a.btn:hover {
