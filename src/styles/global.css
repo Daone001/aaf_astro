@@ -60,12 +60,14 @@ a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  text-align: justify;
 }
 .card ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  text-align: justify;
   width: 100%;
 }
 .card-text {
@@ -76,6 +78,7 @@ a {
   margin: 40px;
   border-radius: 12px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+  text-align: justify;
 }
 
 .card-text img {
@@ -130,6 +133,7 @@ summary {
   color: #222831;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  text-align: justify;
 }
 
 summary:hover {
@@ -141,16 +145,19 @@ summary:hover {
 
 blockquote {
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 details ul li{
   font-size: 1.2rem;
   margin: 15px 0;
   list-style-type: none;
+  text-align: justify;
 }
 
 .card-text {
   overflow-wrap: break-word;
+  text-align: justify;
 }
 
 .card-text p {
