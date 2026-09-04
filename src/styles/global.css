@@ -169,10 +169,22 @@ details ul li{
   .card-text {
     width: 100%;
     padding: 40px;
+    font-size: 1rem;
+
   }
   .card {
     width: 100%;
   }
+
+  .card ul {
+  font-size: 1rem;
+  text-align: left;
+}
+
+  /* details ul li{
+  font-size: 1.1rem;
+  text-align: left;
+} */
 
   .card-text img {
     
