@@ -1,0 +1,44 @@
+---
+export interface Props {
+  title?: string;
+  body?: Array<string>;
+}
+
+const {
+  title = 'Our Story',
+  body = [
+    'It Did Not Start In A Boardroom. It Started As A Brotherhood.',
+    'In 2017, three friends who had chosen to become brothers made a pact in Lagos. We looked at the legal profession we loved and asked a difficult question: Why does the practice of law evolve more slowly than the businesses it serves?',
+    'As our client base rapidly evolved into global, technology-driven, and agile enterprises, the traditional legal service model remained overwhelmingly static, inefficient, and conventional. We recognized that Nigerian businesses required sophisticated, forward-thinking legal counsel tailored to match their innovative pace. Driven by this imperative, we established our practice on the firm conviction that Nigerian legal practitioners possess the caliber, acumen, and integrity to command absolute trust on the global stage.',
+    'So we decided to build it ourselves. AAF Legal Practitioners was not founded on capital. It was founded on conviction. Three friends, one table, one obsession: to redefine the standard of legal practice in Nigeria. For eight years, we have lived that obsession. We made innovation a daily practice, not a slogan - in how we research, how we draft, how we negotiate, how we litigate, and how we advise. We combined rigorous legal training with commercial sense. We combined brotherhood with discipline.',
+  ],
+} = Astro.props;
+---
+
+<div class="card">
+  <div class="card-text">
+    <!-- <h2 class="card-title">
+			{title}
+		</h2>
+		<p class="card-content">
+			{body}
+		</p> -->
+    {listItem1.map((listItems) => <p> {listItems}</p>)}
+    <!-- <slot /> -->
+  </div>
+</div>
+
+<style>
+  ul {
+    list-style: disc;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .card-text h2 {
+    font-size: 2rem;
+    background-color: #333;
+    padding: 45px;
+  }
+</style>

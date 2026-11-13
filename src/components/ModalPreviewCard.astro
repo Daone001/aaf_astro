@@ -5,13 +5,13 @@ export interface Props {
   body?: string;
   closeIcon?: string;
 }
-const {Image, title, body, closeIcon} = Astro.props;
+const { Image, title, body, closeIcon } = Astro.props;
 ---
 
 <section class="section-modal-preview">
   <div class="modal-card">
     <div class="modal-image">
-      <img src={Image} alt="Modal Image">
+      <img src={Image} alt="Modal Image" />
     </div>
     <div class="modal-text">
       <h4 class="modal-title">
@@ -20,7 +20,9 @@ const {Image, title, body, closeIcon} = Astro.props;
       <p class="modal-body">
         {body}
       </p>
-      <button class="close-modal"><span class="material-icons">{closeIcon}</span></button>
+      <button class="close-modal"
+        ><span class="material-icons">{closeIcon}</span></button
+      >
     </div>
   </div>
 </section>
@@ -28,7 +30,6 @@ const {Image, title, body, closeIcon} = Astro.props;
 <style>
   section {
     width: 100%;
-    
   }
   .modal-card {
     position: relative;
@@ -42,7 +43,7 @@ const {Image, title, body, closeIcon} = Astro.props;
     justify-content: center;
     align-items: center;
   }
-  .modal-image img{
+  .modal-image img {
     height: 600px;
     width: 600px;
     object-fit: contain;
@@ -50,15 +51,20 @@ const {Image, title, body, closeIcon} = Astro.props;
   .modal-text {
     padding: 0 35px;
   }
+  .model-text p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
   .modal-title {
     font-size: 2rem;
     text-decoration: underline;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
   }
   .modal-body {
     font-size: 1.5rem;
     line-height: 2.8rem;
   }
+
   .close-modal {
     position: absolute;
     top: 2%;
@@ -80,13 +86,15 @@ const {Image, title, body, closeIcon} = Astro.props;
   @media screen and (max-width: 636px) {
     .modal-card {
       width: 100%;
+      height: 800px;
+      overflow: scroll;
     }
     .modal-image img {
       height: auto;
       width: 80%;
     }
     .close-modal:hover {
-    transform: scale(0.9);
-  }
+      transform: scale(0.9);
+    }
   }
 </style>

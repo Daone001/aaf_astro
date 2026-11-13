@@ -5,16 +5,16 @@ export interface Props {
   title?: string;
   summary?: string;
   openIcon?: string;
-  body?: string;
+  body?: Array<string>;
 }
-const {Image, title, summary, openIcon, body} = Astro.props;
+const { Image, title, summary, openIcon, body } = Astro.props;
 ---
 
 <section class="section-modal">
   <div class="modal-veil"></div>
   <div class="modal-card">
     <div class="modal-image">
-      <img src={Image} alt="Modal Image">
+      <img src={Image} alt="Modal Image" />
     </div>
     <div class="modal-text">
       <h4 class="modal-title">
@@ -23,18 +23,18 @@ const {Image, title, summary, openIcon, body} = Astro.props;
       <p class="modal-body">
         {summary}
       </p>
-      <button class="open-modal"><span class="material-icons">{openIcon}</span></button>
+      <button class="open-modal"
+        ><span class="material-icons">{openIcon}</span></button
+      >
     </div>
   </div>
-  <ModalPreviewCard 
-  Image={Image}
-	title={title}
-	body={body}
-	closeIcon="close"
+  <ModalPreviewCard
+    Image={Image}
+    title={title}
+    body={body.map((contents) => <p> {contents}</p>)}
+    closeIcon="close"
   />
 </section>
-
-  
 
 <style>
   section {
@@ -47,7 +47,7 @@ const {Image, title, summary, openIcon, body} = Astro.props;
   .section-modal {
     position: relative;
   }
-  
+
   .modal-card {
     position: relative;
     background-color: #872341;
@@ -62,19 +62,24 @@ const {Image, title, summary, openIcon, body} = Astro.props;
     align-items: center;
     margin-bottom: 60px;
   }
-  .modal-image img{
+  .modal-image img {
     height: auto;
     width: 80%;
     object-fit: contain;
   }
   .modal-title {
     font-size: 2.2rem;
-    margin-bottom:1.5rem;
+    margin-bottom: 1.5rem;
     text-decoration: underline;
   }
   .modal-body {
     font-size: 1.3rem;
     line-height: 1.9rem;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin: 40px 0;
   }
   .open-modal {
     position: absolute;
@@ -98,6 +103,8 @@ const {Image, title, summary, openIcon, body} = Astro.props;
     .modal-card {
       width: 100%;
       margin: 100px 0;
+    }
+    .modal-text {
     }
     .modal-image img {
       height: auto;
@@ -124,20 +131,16 @@ const {Image, title, summary, openIcon, body} = Astro.props;
   // })
   openButtons.forEach((openButton, idx) => {
     openButton.addEventListener('click', () => {
-    
       modalCards[idx].classList.add('active');
-    
-    modalVeil[idx].classList.add('active');
-    
-  })
-  })
+
+      modalVeil[idx].classList.add('active');
+    });
+  });
   closeButtons.forEach((closeButton, index) => {
-    closeButton.addEventListener('click', () =>{
-    
+    closeButton.addEventListener('click', () => {
       modalCards[index].classList.remove('active');
 
-    modalVeil[index].classList.remove('active');
-  })
-  })
-  
+      modalVeil[index].classList.remove('active');
+    });
+  });
 </script>
